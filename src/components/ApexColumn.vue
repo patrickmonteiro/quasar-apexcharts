@@ -1,7 +1,7 @@
 <template>
-  <q-card class="my-card bg-grey-10" style="min-height: 400px">
+  <q-card class="my-card bg-grey-9" style="min-height: 250px">
     <q-card-section>
-      <apexchart type="bar" height="350" :options="chartOptions" :series="series" />
+      <apexchart type="bar" height="200" :options="chartOptions" :series="series" />
     </q-card-section>
   </q-card>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <q-card class="my-card bg-grey-10" style="min-height: 400px">
+  <q-card class="my-card bg-grey-9" >
     <q-card-section>
-      <apexchart type="donut" height="350" :options="chartOptions" :series="series" />
+      <apexchart type="donut" height="200" :options="chartOptions" :series="series" />
     </q-card-section>
   </q-card>
 </template>
@@ -13,7 +13,31 @@ export default {
     return {
       series: [44, 55, 41, 17, 15],
       chartOptions: {
-        labels: ['Apple', 'Mango', 'Orange', 'Watermelon']
+        theme: {
+          monochrome: {
+            enabled: true,
+            color: '#255aee',
+            shadeTo: 'light',
+            shadeIntensity: 0.65
+          }
+        },
+        labels: ['Apple', 'Mango', 'Orange', 'Watermelon'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 250
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }],
+        legend: {
+          labels: {
+            colors: '#FFF'
+          }
+        }
       }
     }
   }
