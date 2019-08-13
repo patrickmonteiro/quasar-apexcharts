@@ -1,5 +1,5 @@
 <template>
-  <q-card class="my-card" style="min-height: 400px">
+  <q-card class="my-card bg-grey-10" style="min-height: 400px">
     <q-card-section>
       <apexchart type="bar" height="350" :options="chartOptions" :series="series" />
     </q-card-section>
@@ -22,6 +22,22 @@ export default {
         data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
       }],
       chartOptions: {
+        // colors: ['#F44336', '#E91E63', '#9C27B0'],
+        theme: {
+          monochrome: {
+            enabled: true,
+            color: '#255aee',
+            shadeTo: 'light',
+            shadeIntensity: 0.65
+          }
+        },
+        dropShadow: {
+          enabled: true,
+          top: 0,
+          left: 0,
+          blur: 3,
+          opacity: 0.5
+        },
         plotOptions: {
           bar: {
             horizontal: false,
@@ -30,7 +46,7 @@ export default {
           }
         },
         dataLabels: {
-          enabled: true
+          enabled: false
         },
         stroke: {
           show: true,
@@ -39,16 +55,26 @@ export default {
         },
 
         xaxis: {
-          categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct']
+          categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+          labels: {
+            style: {
+              colors: '#fff'
+            }
+          }
         },
         yaxis: {
           title: {
             text: '$ (thousands)'
+          },
+          labels: {
+            style: {
+              color: '#fff'
+            }
           }
         },
-        fill: {
-          opacity: 1
-        },
+        // fill: {
+        //   colors: ['#F44336', '#E91E63', '#9C27B0']
+        // },
         tooltip: {
           y: {
             formatter: function (val) {

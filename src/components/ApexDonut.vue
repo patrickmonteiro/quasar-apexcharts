@@ -1,5 +1,5 @@
 <template>
-  <q-card class="my-card" style="min-height: 400px">
+  <q-card class="my-card bg-grey-10" style="min-height: 400px">
     <q-card-section>
       <apexchart type="donut" height="350" :options="chartOptions" :series="series" />
     </q-card-section>

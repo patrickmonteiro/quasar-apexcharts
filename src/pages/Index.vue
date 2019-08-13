@@ -1,5 +1,5 @@
 <template>
-  <q-page class="container">
+  <q-page class="container bg-grey-10">
     <div class="row">
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-column></apex-column>
