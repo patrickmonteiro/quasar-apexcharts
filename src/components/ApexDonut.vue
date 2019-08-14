@@ -1,7 +1,7 @@
 <template>
   <q-card class="my-card bg-grey-9" >
     <q-card-section>
-      <apexchart type="donut" height="200" :options="chartOptions" :series="series" />
+      <apexchart type="donut" height="240" :options="chartOptions" :series="series" />
     </q-card-section>
   </q-card>
 </template>
@@ -20,6 +20,9 @@ export default {
             shadeTo: 'light',
             shadeIntensity: 0.65
           }
+        },
+        fill: {
+          type: 'gradient'
         },
         labels: ['Apple', 'Mango', 'Orange', 'Watermelon'],
         responsive: [{

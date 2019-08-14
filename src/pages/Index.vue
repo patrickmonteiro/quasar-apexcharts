@@ -1,6 +1,6 @@
 <template>
-  <q-page class="container bg-grey-10">
-    <div class="row">
+  <q-page class="container" style="background: #343E59;">
+    <div class="row q-col-gutter-sm q-pt-sm">
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-column></apex-column>
       </div>
@@ -10,6 +10,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-line></apex-line>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-multiple-radial-bars></apex-multiple-radial-bars>
+      </div>
     </div>
   </q-page>
 </template>
@@ -18,12 +21,14 @@
 import ApexColumn from 'components/ApexColumn'
 import ApexDonut from 'components/ApexDonut'
 import ApexLine from 'components/ApexLine'
+import ApexMultipleRadialBars from 'components/ApexMultipleRadialBars'
 export default {
   name: 'PageIndex',
   components: {
     ApexColumn,
     ApexDonut,
-    ApexLine
+    ApexLine,
+    ApexMultipleRadialBars
   }
 }
 </script>

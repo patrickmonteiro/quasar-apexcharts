@@ -31,6 +31,9 @@ export default {
             shadeIntensity: 0.65
           }
         },
+        fill: {
+          type: 'gradient'
+        },
         dropShadow: {
           enabled: true,
           top: 0,
