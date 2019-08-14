@@ -17,13 +17,14 @@ export default {
         data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
       }],
       chartOptions: {
+        colors: ['#FCCF31', '#17ead9', '#f02fc2'],
         theme: {
-          monochrome: {
-            enabled: true,
-            color: '#255aee',
-            shadeTo: 'light',
-            shadeIntensity: 0.65
-          }
+          // monochrome: {
+          //   enabled: true,
+          //   color: '#255aee',
+          //   shadeTo: 'light',
+          //   shadeIntensity: 0.65
+          // }
         },
         chart: {
           height: 350,
@@ -31,22 +32,39 @@ export default {
             enabled: true
           }
         },
+        stroke: {
+          curve: 'straight',
+          width: 5
+        },
+        grid: {
+          padding: {
+            left: 0,
+            right: 0
+          }
+        },
+        dropShadow: {
+          enabled: true,
+          opacity: 0.3,
+          blur: 5,
+          left: -7,
+          top: 22
+        },
         dataLabels: {
           enabled: false
         },
-        stroke: {
-          curve: 'straight'
-        },
+        // stroke: {
+        //   curve: 'straight'
+        // },
         title: {
           text: 'Product Trends by Month',
           align: 'left'
         },
-        grid: {
-          row: {
-            // colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-            opacity: 0.5
-          }
-        },
+        // grid: {
+        //   row: {
+        //     // colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+        //     opacity: 0.5
+        //   }
+        // },
         xaxis: {
           categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
           labels: {
