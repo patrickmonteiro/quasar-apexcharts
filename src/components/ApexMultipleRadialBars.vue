@@ -30,6 +30,7 @@ export default {
         plotOptions: {
           radialBar: {
             offsetY: -10,
+            offsetX: 0,
             startAngle: 0,
             endAngle: 250,
             hollow: {
@@ -56,7 +57,7 @@ export default {
           floating: true,
           fontSize: '16px',
           position: 'left',
-          offsetX: 160,
+          offsetX: 35,
           offsetY: 10,
           labels: {
             useSeriesColors: true

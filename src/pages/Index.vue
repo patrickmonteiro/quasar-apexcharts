@@ -16,6 +16,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-heatmap></apex-heatmap>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-radial-bar></apex-radial-bar>
+      </div>
     </div>
   </q-page>
 </template>
@@ -26,6 +29,7 @@ import ApexDonut from 'components/ApexDonut'
 import ApexLine from 'components/ApexLine'
 import ApexHeatmap from 'components/ApexHeatmap'
 import ApexMultipleRadialBars from 'components/ApexMultipleRadialBars'
+import ApexRadialBar from 'components/ApexRadialBar'
 export default {
   name: 'PageIndex',
   components: {
@@ -33,7 +37,8 @@ export default {
     ApexDonut,
     ApexLine,
     ApexMultipleRadialBars,
-    ApexHeatmap
+    ApexHeatmap,
+    ApexRadialBar
   }
 }
 </script>
