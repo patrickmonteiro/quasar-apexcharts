@@ -22,9 +22,18 @@ export default {
           //   shadeIntensity: 0.65
           // }
         },
-        // fill: {
-        //   type: 'gradient'
-        // },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'dark',
+            type: 'vertical',
+            shadeIntensity: 0.05,
+            inverseColors: false,
+            opacityFrom: 1,
+            opacityTo: 0.9,
+            stops: [0, 100]
+          }
+        },
         labels: ['Apple', 'Mango', 'Orange', 'Watermelon'],
         responsive: [{
           breakpoint: 480,

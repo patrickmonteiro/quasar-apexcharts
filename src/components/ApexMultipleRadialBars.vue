@@ -14,8 +14,18 @@ export default {
     return {
       series: [76, 67, 61, 90],
       chartOptions: {
+        colors: ['#FCCF31', '#17ead9', '#f02fc2', '#D15F5F'],
         fill: {
-          type: 'gradient'
+          type: 'gradient',
+          gradient: {
+            shade: 'dark',
+            type: 'vertical',
+            shadeIntensity: 0.05,
+            inverseColors: false,
+            opacityFrom: 1,
+            opacityTo: 0.9,
+            stops: [0, 100]
+          }
         },
         plotOptions: {
           radialBar: {
