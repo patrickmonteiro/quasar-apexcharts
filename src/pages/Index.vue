@@ -19,6 +19,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-radial-bar></apex-radial-bar>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-bubble></apex-bubble>
+      </div>
     </div>
   </q-page>
 </template>
@@ -30,6 +33,7 @@ import ApexLine from 'components/ApexLine'
 import ApexHeatmap from 'components/ApexHeatmap'
 import ApexMultipleRadialBars from 'components/ApexMultipleRadialBars'
 import ApexRadialBar from 'components/ApexRadialBar'
+import ApexBubble from 'components/ApexBubble'
 export default {
   name: 'PageIndex',
   components: {
@@ -38,7 +42,8 @@ export default {
     ApexLine,
     ApexMultipleRadialBars,
     ApexHeatmap,
-    ApexRadialBar
+    ApexRadialBar,
+    ApexBubble
   }
 }
 </script>

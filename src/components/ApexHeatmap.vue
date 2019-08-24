@@ -62,7 +62,6 @@ export default {
         }
       ],
       chartOptions: {
-        // colors: ['#FCCF31', '#17ead9', '#f02fc2'],
         fill: {
           type: 'gradient',
           gradient: {

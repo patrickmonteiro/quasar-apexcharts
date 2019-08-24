@@ -1,7 +1,6 @@
 <template>
   <q-card class="my-card bg-grey-9" style="min-height: 250px">
     <q-card-section>
-      <!-- <apexchart type="donut" height="350" :options="chartOptions" :series="series" /> -->
       <apexchart type="line" height="200" :options="chartOptions" :series="series" />
     </q-card-section>
   </q-card>
@@ -18,14 +17,6 @@ export default {
       }],
       chartOptions: {
         colors: ['#FCCF31', '#17ead9', '#f02fc2'],
-        theme: {
-          // monochrome: {
-          //   enabled: true,
-          //   color: '#255aee',
-          //   shadeTo: 'light',
-          //   shadeIntensity: 0.65
-          // }
-        },
         chart: {
           height: 350,
           zoom: {
@@ -52,19 +43,10 @@ export default {
         dataLabels: {
           enabled: false
         },
-        // stroke: {
-        //   curve: 'straight'
-        // },
         title: {
           text: 'Product Trends by Month',
           align: 'left'
         },
-        // grid: {
-        //   row: {
-        //     // colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-        //     opacity: 0.5
-        //   }
-        // },
         xaxis: {
           categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
           labels: {

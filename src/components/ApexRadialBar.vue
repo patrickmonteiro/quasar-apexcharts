@@ -1,7 +1,6 @@
 <template>
   <q-card class="my-card bg-grey-9" >
     <q-card-section>
-      <!-- <apexchart type="donut" height="240" :options="chartOptions" :series="series" /> -->
       <apexchart type=radialBar height=230 :options="chartOptions" :series="series" />
     </q-card-section>
   </q-card>

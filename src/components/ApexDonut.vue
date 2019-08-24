@@ -14,14 +14,6 @@ export default {
       series: [44, 55, 41, 17, 15],
       chartOptions: {
         colors: ['#FCCF31', '#17ead9', '#f02fc2'],
-        theme: {
-          // monochrome: {
-          //   enabled: true,
-          //   color: '#255aee',
-          //   shadeTo: 'light',
-          //   shadeIntensity: 0.65
-          // }
-        },
         fill: {
           type: 'gradient',
           gradient: {
