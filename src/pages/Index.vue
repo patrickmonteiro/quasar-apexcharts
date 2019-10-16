@@ -22,6 +22,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-bubble></apex-bubble>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-radar></apex-radar>
+      </div>
     </div>
   </q-page>
 </template>
@@ -34,6 +37,7 @@ import ApexHeatmap from 'components/ApexHeatmap'
 import ApexMultipleRadialBars from 'components/ApexMultipleRadialBars'
 import ApexRadialBar from 'components/ApexRadialBar'
 import ApexBubble from 'components/ApexBubble'
+import ApexRadar from 'components/ApexRadar'
 export default {
   name: 'PageIndex',
   components: {
@@ -43,7 +47,8 @@ export default {
     ApexMultipleRadialBars,
     ApexHeatmap,
     ApexRadialBar,
-    ApexBubble
+    ApexBubble,
+    ApexRadar
   }
 }
 </script>
