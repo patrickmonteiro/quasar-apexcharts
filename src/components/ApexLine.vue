@@ -1,7 +1,7 @@
 <template>
   <q-card class="my-card bg-grey-9" style="min-height: 250px">
     <q-card-section>
-      <apexchart type="line" height="200" :options="chartOptions" :series="series" />
+      <apexchart ref="realtimeChart" type="line" height="200" :options="chartOptions" :series="series" />
     </q-card-section>
   </q-card>
 </template>
@@ -13,7 +13,7 @@ export default {
     return {
       series: [{
         name: 'Desktops',
-        data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+        data: [10, 41, 35, 51, 49, 62, 69, 91, 99]
       }],
       chartOptions: {
         colors: ['#FCCF31', '#17ead9', '#f02fc2'],
@@ -66,14 +66,23 @@ export default {
     }
   },
   mounted () {
-    setInterval(() => {
-      this.series[0].data.splice(0, 1)
-      this.series[0].data.push(this.getRandomArbitrary(0, 99))
-    }, 5000)
+    this.setDataLineChart()
   },
   methods: {
     getRandomArbitrary (min, max) {
       return Math.floor(Math.random() * 99)
+    },
+    setDataLineChart () {
+      setInterval(() => {
+        this.series[0].data.splice(0, 1)
+        this.series[0].data.push(this.getRandomArbitrary(0, 99))
+        this.updateSeriesLine()
+      }, 3000)
+    },
+    updateSeriesLine () {
+      this.$refs.realtimeChart.updateSeries([{
+        data: this.series[0].data
+      }], false, true)
     }
   }
 }
