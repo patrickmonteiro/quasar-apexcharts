@@ -18,10 +18,7 @@ export default {
       chartOptions: {
         colors: ['#FCCF31', '#17ead9', '#f02fc2'],
         chart: {
-          height: 350,
-          zoom: {
-            enabled: true
-          }
+          height: 350
         },
         stroke: {
           curve: 'straight',
