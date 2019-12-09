@@ -1,14 +1,16 @@
 <template>
-  <q-card class="my-card bg-grey-9" style="min-height: 250px">
-    <q-card-section>
-      <apexchart type="radar" height="230px" :options="chartOptions" :series="series" />
-    </q-card-section>
-  </q-card>
+  <card-base>
+    <apexchart type="radar" height="230px" :options="chartOptions" :series="series" />
+  </card-base>
 </template>
 
 <script>
+import CardBase from 'components/CardBase'
 export default {
   name: 'ApexRadar',
+  components: {
+    CardBase
+  },
   data () {
     return {
       series: [{
@@ -18,7 +20,11 @@ export default {
       chartOptions: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June'],
         title: {
-          text: 'Basic Radar Chart'
+          text: 'Radar',
+          align: 'left',
+          style: {
+            color: '#FFF'
+          }
         },
         yaxis: {
           show: false

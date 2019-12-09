@@ -1,14 +1,16 @@
 <template>
-  <q-card class="my-card bg-grey-9" >
-    <q-card-section>
-      <apexchart type=radialBar height=230 :options="chartOptions" :series="series" />
-    </q-card-section>
-  </q-card>
+  <card-base>
+    <apexchart type=radialBar height=200 :options="chartOptions" :series="series" />
+  </card-base>
 </template>
 
 <script>
+import CardBase from 'components/CardBase'
 export default {
   name: 'ApexMultipleRadialBars',
+  components: {
+    CardBase
+  },
   data () {
     return {
       series: [75],
@@ -16,6 +18,13 @@ export default {
         chart: {
           toolbar: {
             show: true
+          }
+        },
+        title: {
+          text: 'Radial Bar',
+          align: 'left',
+          style: {
+            color: '#FFF'
           }
         },
         plotOptions: {

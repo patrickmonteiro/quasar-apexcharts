@@ -1,14 +1,16 @@
 <template>
-  <q-card class="my-card bg-grey-9" style="min-height: 250px">
-    <q-card-section>
-      <apexchart type=heatmap height=200 :options="chartOptions" :series="series" />
-    </q-card-section>
-  </q-card>
+  <card-base>
+    <apexchart type=heatmap height=200 :options="chartOptions" :series="series" />
+  </card-base>
 </template>
 
 <script>
+import CardBase from 'components/CardBase'
 export default {
   name: 'ApexHeatmap',
+  components: {
+    CardBase
+  },
   data () {
     return {
       series: [
@@ -74,25 +76,32 @@ export default {
             stops: [0, 100]
           }
         },
+        title: {
+          text: 'Heatmap',
+          align: 'left',
+          style: {
+            color: '#FFF'
+          }
+        },
         plotOptions: {
           heatmap: {
             colorScale: {
               ranges: [{
                 from: -30,
                 to: 5,
-                color: '#FCCF31',
+                color: '#008FFB',
                 name: 'low'
               },
               {
                 from: 6,
                 to: 20,
-                color: '#17ead9',
+                color: '#00E396',
                 name: 'medium'
               },
               {
                 from: 21,
                 to: 45,
-                color: '#f02fc2',
+                color: '#FEB019',
                 name: 'high'
               }
               ]

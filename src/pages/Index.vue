@@ -1,6 +1,11 @@
 <template>
   <q-page class="container" style="background: #343E59;">
-    <div class="row q-col-gutter-sm q-pt-sm">
+    <div class="row q-col-gutter-md q-px-md q-pt-sm justify-center">
+      <div class="col-md-3" v-for="i in 4" :key="i">
+        <apex-line-small :bgColorCard="colors[i - 1]"></apex-line-small>
+      </div>
+    </div>
+    <div class="row q-col-gutter-md q-px-md q-py-md">
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-column></apex-column>
       </div>
@@ -38,6 +43,7 @@ import ApexMultipleRadialBars from 'components/ApexMultipleRadialBars'
 import ApexRadialBar from 'components/ApexRadialBar'
 import ApexBubble from 'components/ApexBubble'
 import ApexRadar from 'components/ApexRadar'
+import ApexLineSmall from 'components/ApexLineSmall'
 export default {
   name: 'PageIndex',
   components: {
@@ -48,7 +54,18 @@ export default {
     ApexHeatmap,
     ApexRadialBar,
     ApexBubble,
-    ApexRadar
+    ApexRadar,
+    ApexLineSmall
+  },
+  data () {
+    return {
+      colors: [
+        'linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%)',
+        'linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%)',
+        'linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%)',
+        'linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%)'
+      ]
+    }
   }
 }
 </script>

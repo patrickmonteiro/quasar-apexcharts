@@ -1,19 +1,21 @@
 <template>
-  <q-card class="my-card bg-grey-9" >
-    <q-card-section>
-      <apexchart type="donut" height="240" :options="chartOptions" :series="series" />
-    </q-card-section>
-  </q-card>
+  <card-base>
+    <apexchart type="donut" height="211" :options="chartOptions" :series="series" />
+  </card-base>
 </template>
 
 <script>
+import CardBase from 'components/CardBase'
 export default {
   name: 'ApexColumn',
+  components: {
+    CardBase
+  },
   data () {
     return {
       series: [44, 55, 41, 17, 15],
       chartOptions: {
-        colors: ['#FCCF31', '#17ead9', '#f02fc2'],
+        colors: ['#008FFB', '#00E396', '#FEB019'],
         fill: {
           type: 'gradient',
           gradient: {
@@ -24,6 +26,13 @@ export default {
             opacityFrom: 1,
             opacityTo: 0.9,
             stops: [0, 100]
+          }
+        },
+        title: {
+          text: 'Donut',
+          align: 'left',
+          style: {
+            color: '#FFF'
           }
         },
         labels: ['Apple', 'Mango', 'Orange', 'Watermelon'],

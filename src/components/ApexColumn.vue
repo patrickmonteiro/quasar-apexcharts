@@ -1,14 +1,16 @@
 <template>
-  <q-card class="my-card bg-grey-9" style="min-height: 250px">
-    <q-card-section>
+  <card-base>
       <apexchart type="bar" height="200" :options="chartOptions" :series="series" />
-    </q-card-section>
-  </q-card>
+  </card-base>
 </template>
 
 <script>
+import CardBase from 'components/CardBase'
 export default {
   name: 'ApexColumn',
+  components: {
+    CardBase
+  },
   data () {
     return {
       series: [{
@@ -17,6 +19,22 @@ export default {
       }],
       chartOptions: {
         colors: ['#FCCF31', '#17ead9', '#f02fc2'],
+        grid: {
+          show: true,
+          strokeDashArray: 0,
+          xaxis: {
+            lines: {
+              show: true
+            }
+          }
+        },
+        title: {
+          text: 'Column',
+          align: 'left',
+          style: {
+            color: '#FFF'
+          }
+        },
         fill: {
           type: 'gradient',
           gradient: {

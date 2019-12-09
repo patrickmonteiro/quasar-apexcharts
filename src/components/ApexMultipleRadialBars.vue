@@ -1,19 +1,21 @@
 <template>
-  <q-card class="my-card bg-grey-9" >
-    <q-card-section>
-      <apexchart type=radialBar height=230 :options="chartOptions" :series="series" />
-    </q-card-section>
-  </q-card>
+  <card-base>
+    <apexchart type=radialBar height=200 :options="chartOptions" :series="series" />
+  </card-base>
 </template>
 
 <script>
+import CardBase from 'components/CardBase'
 export default {
   name: 'ApexMultipleRadialBars',
+  components: {
+    CardBase
+  },
   data () {
     return {
       series: [76, 67, 61, 90],
       chartOptions: {
-        colors: ['#FCCF31', '#17ead9', '#f02fc2', '#D15F5F'],
+        colors: ['#008FFB', '#00E396', '#FEB019', '#D15F5F'],
         fill: {
           type: 'gradient',
           gradient: {
@@ -24,6 +26,13 @@ export default {
             opacityFrom: 1,
             opacityTo: 0.9,
             stops: [0, 100]
+          }
+        },
+        title: {
+          text: 'Multiple Radial Bars',
+          align: 'left',
+          style: {
+            color: '#FFF'
           }
         },
         plotOptions: {

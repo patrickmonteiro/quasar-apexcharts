@@ -1,6 +1,13 @@
 <template>
-  <card-base>
-    <apexchart ref="realtimeChart" type="line" height="200" :options="chartOptions" :series="series" />
+  <card-base :bgColor="bgColorCard">
+    <div class="row">
+      <div class="col-12 text-h6 text-white">
+        Line
+      </div>
+      <div class="col-12">
+      <apexchart ref="realtimeChart" type="line" height="90" :options="chartOptions" :series="series" />
+      </div>
+    </div>
   </card-base>
 </template>
 
@@ -11,56 +18,37 @@ export default {
   components: {
     CardBase
   },
+  props: {
+    bgColorCard: {
+      type: String
+    }
+  },
   data () {
     return {
       series: [{
-        name: 'Desktops',
-        data: [10, 41, 35, 51, 49, 62, 69, 91, 99]
+        data: [10, 41, 35, 51, 260, 62, 69, 91, 600]
       }],
       chartOptions: {
-        colors: ['#FCCF31', '#17ead9', '#f02fc2'],
+        colors: ['#FFF', '#17ead9', '#f02fc2'],
         chart: {
-          height: 350
+          toolbar: {
+            show: false
+          }
         },
         grid: {
-          show: true,
-          strokeDashArray: 0,
-          xaxis: {
-            lines: {
-              show: true
-            }
-          }
+          show: false
         },
         stroke: {
-          curve: 'straight',
-          width: 5
-        },
-        // grid: {
-        //   padding: {
-        //     left: 0,
-        //     right: 0
-        //   }
-        // },
-        dropShadow: {
-          enabled: true,
-          opacity: 0.3,
-          blur: 5,
-          left: -7,
-          top: 22
-        },
-        dataLabels: {
-          enabled: false
-        },
-        title: {
-          text: 'Line',
-          align: 'left',
-          style: {
-            color: '#FFF'
-          }
+          curve: 'smooth',
+          width: 4
         },
         xaxis: {
-          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+          // categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+          axisBorder: {
+            show: false
+          },
           labels: {
+            show: false,
             style: {
               colors: '#fff'
             }
@@ -68,6 +56,7 @@ export default {
         },
         yaxis: {
           labels: {
+            show: false,
             style: {
               color: '#fff'
             }
@@ -77,7 +66,7 @@ export default {
     }
   },
   mounted () {
-    this.setDataLineChart()
+    // this.setDataLineChart()
   },
   methods: {
     getRandomArbitrary (min, max) {

@@ -1,14 +1,16 @@
 <template>
-  <q-card class="my-card bg-grey-9" >
-    <q-card-section>
-      <apexchart type=bubble height=230 :options="chartOptions" :series="series" />
-    </q-card-section>
-  </q-card>
+  <card-base>
+    <apexchart type=bubble height=230 :options="chartOptions" :series="series" />
+  </card-base>
 </template>
 
 <script>
+import CardBase from 'components/CardBase'
 export default {
   name: 'ApexBubble',
+  components: {
+    CardBase
+  },
   data () {
     return {
       series: [{
@@ -52,11 +54,24 @@ export default {
             stops: [0, 100]
           }
         },
-        dataLabels: {
-          enabled: false
+        grid: {
+          show: true,
+          strokeDashArray: 0,
+          xaxis: {
+            lines: {
+              show: true
+            }
+          }
         },
         title: {
-          text: 'Simple Bubble Chart'
+          text: 'Bubble',
+          align: 'left',
+          style: {
+            color: '#FFF'
+          }
+        },
+        dataLabels: {
+          enabled: false
         },
         legend: {
           labels: {

@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar class="bg-grey-10">
+      <q-toolbar class="" style="background: #2B2D3E">
         <q-btn
           flat
           dense
@@ -13,11 +13,11 @@
         </q-btn>
 
         <q-toolbar-title>
-          Quasar App
+          Quasar + ApexChart
         </q-toolbar-title>
 
         <q-btn
-          color="grey-7"
+          style="background: #36384c"
           @click="$q.fullscreen.toggle()"
           :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
         />
