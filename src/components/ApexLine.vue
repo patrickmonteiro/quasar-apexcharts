@@ -20,7 +20,8 @@ export default {
       chartOptions: {
         colors: ['#FCCF31', '#17ead9', '#f02fc2'],
         chart: {
-          height: 350
+          height: 350,
+          type: 'line'
         },
         grid: {
           show: true,
@@ -32,15 +33,8 @@ export default {
           }
         },
         stroke: {
-          curve: 'straight',
-          width: 5
+          curve: 'smooth'
         },
-        // grid: {
-        //   padding: {
-        //     left: 0,
-        //     right: 0
-        //   }
-        // },
         dropShadow: {
           enabled: true,
           opacity: 0.3,
