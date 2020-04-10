@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="hHh Lpr lff">
     <q-header elevated class="shadow-8">
       <q-toolbar class="bg-custom-blue-dark">
         <q-btn
@@ -29,6 +29,8 @@
       v-model="leftDrawerOpen"
       content-class="bg-custom-blue-dark"
       :breakpoint="400"
+      overlay
+      elevated
       show-if-above
     >
     <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px;">
