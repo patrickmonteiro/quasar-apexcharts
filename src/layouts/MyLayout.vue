@@ -42,7 +42,7 @@
             <q-item-label>Home</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://github.com/patrickmonteiro/quasar-web-apis">
+        <q-item clickable tag="a" target="_blank" href="https://github.com/patrickmonteiro/quasar-apexcharts">
           <q-item-section avatar>
             <q-icon name="fab fa-github" />
           </q-item-section>
