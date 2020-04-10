@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar class="" style="background: #2B2D3E">
+    <q-header elevated class="shadow-8">
+      <q-toolbar class="bg-custom-blue-dark">
         <q-btn
           flat
           dense
@@ -9,7 +9,7 @@
           @click="leftDrawerOpen = !leftDrawerOpen"
           aria-label="Menu"
         >
-          <q-icon name="menu" />
+          <q-icon name="fas fa-bars" />
         </q-btn>
 
         <q-toolbar-title>
@@ -19,7 +19,7 @@
         <q-btn
           style="background: #36384c"
           @click="$q.fullscreen.toggle()"
-          :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
+          :icon="$q.fullscreen.isActive ? 'fas fa-compress' : 'fas fa-expand'"
         />
         <!-- <div>Quasar v{{ $q.version }}</div> -->
       </q-toolbar>
@@ -27,66 +27,48 @@
 
     <q-drawer
       v-model="leftDrawerOpen"
-      bordered
-      content-class="bg-grey-2"
+      content-class="bg-custom-blue-dark"
+      :breakpoint="400"
+      show-if-above
     >
-      <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
+    <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px;">
+      <q-list class="text-white" >
+        <q-item-label header>Menu</q-item-label>
+        <q-item clickable to="/" exact active-class="text-purple-3">
           <q-item-section avatar>
-            <q-icon name="school" />
+            <q-icon name="fas fa-home" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Docs</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
+            <q-item-label>Home</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://github.quasar.dev">
+        <q-item clickable tag="a" target="_blank" href="https://github.com/patrickmonteiro/quasar-web-apis">
           <q-item-section avatar>
-            <q-icon name="code" />
+            <q-icon name="fab fa-github" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Github</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://chat.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="chat" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Discord Chat Channel</q-item-label>
-            <q-item-label caption>chat.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://forum.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="record_voice_over" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Forum</q-item-label>
-            <q-item-label caption>forum.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://twitter.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="rss_feed" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Twitter</q-item-label>
-            <q-item-label caption>@quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://facebook.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="public" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Facebook</q-item-label>
-            <q-item-label caption>@QuasarFramework</q-item-label>
+            <q-item-label>Github do Projeto</q-item-label>
+            <q-item-label class="text-white" caption>Repositório com o código fonte</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
+    </q-scroll-area>
+      <q-img class="absolute-top" src="statics/fundo-menu.jpg" style="height: 150px">
+          <div class="absolute-bottom bg-transparent">
+            <q-avatar size="56px" class="q-mb-sm">
+              <img src="statics/patrick_perfil.png">
+            </q-avatar>
+            <div class="text-weight-bold">Patrick Monteiro</div>
+            <div class="q-gutter-sm">
+              <q-btn dense color="white" text-color="primary" round size="sm" icon="fab fa-github"
+              type="a" href="https://github.com/patrickmonteiro" target="_blank" />
+              <q-btn dense color="white" text-color="primary" round size="sm" icon="fab fa-linkedin-in"
+              type="a" href="https://www.linkedin.com/in/engpatrickmonteiro/" target="_blank" />
+              <q-btn dense color="white" text-color="primary" round size="sm" icon="fab fa-twitter"
+              type="a" href="https://twitter.com/monteiropatrick" target="_blank" />
+            </div>
+          </div>
+        </q-img>
     </q-drawer>
 
     <q-page-container>
@@ -112,4 +94,7 @@ export default {
 </script>
 
 <style>
+.bg-custom-blue-dark {
+  background: #2B2D3E;
+}
 </style>

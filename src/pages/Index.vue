@@ -1,6 +1,6 @@
 <template>
   <q-page class="container" style="background: #343E59;">
-    <div class="row q-col-gutter-md q-px-md q-pt-sm justify-center">
+    <div class="row q-col-gutter-md q-px-md q-pt-md justify-center">
       <div class="col-md-3" v-for="i in 4" :key="i">
         <apex-line-small :bgColorCard="colors[i - 1]"></apex-line-small>
       </div>
