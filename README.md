@@ -1,3 +1,9 @@
+
+[![Quasar Badge](https://img.shields.io/badge/Framework-Quasar-blue)](https://quasar.dev)
+[![Quasar Badge](https://img.shields.io/github/forks/patrickmonteiro/quasar-apexcharts?style=social)](https://quasar.dev)
+[![Quasar Badge](https://img.shields.io/github/stars/patrickmonteiro/quasar-apexcharts?style=social)](https://quasar.dev)
+
+
 # Quasar Apex Charts (quasar-apexcharts)
 
 Dashboard project using Quasar and ApexCharts
