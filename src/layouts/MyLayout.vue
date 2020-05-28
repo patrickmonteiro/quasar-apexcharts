@@ -13,7 +13,7 @@
         </q-btn>
 
         <q-toolbar-title>
-          Quasar + ApexChart
+          Quasar + ApexCharts
         </q-toolbar-title>
 
         <q-btn
@@ -31,7 +31,6 @@
       :breakpoint="400"
       overlay
       elevated
-      show-if-above
     >
     <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px;">
       <q-list class="text-white" >
@@ -42,6 +41,14 @@
           </q-item-section>
           <q-item-section>
             <q-item-label>Home</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable to="/dashboard" exact active-class="text-purple-3">
+          <q-item-section avatar>
+            <q-icon name="fas fa-chart-bar" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Dashboard</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable tag="a" target="_blank" href="https://github.com/patrickmonteiro/quasar-apexcharts">
@@ -86,7 +93,7 @@ export default {
   name: 'MyLayout',
   data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
+      leftDrawerOpen: false
     }
   },
   methods: {
