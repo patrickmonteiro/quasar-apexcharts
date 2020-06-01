@@ -31,6 +31,7 @@
       :breakpoint="400"
       overlay
       elevated
+      behavior="mobile"
     >
     <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px;">
       <q-list class="text-white" >
