@@ -63,10 +63,10 @@
         </q-item>
       </q-list>
     </q-scroll-area>
-      <q-img class="absolute-top" src="statics/fundo-menu.jpg" style="height: 150px">
+      <q-img class="absolute-top" src="/fundo-menu.jpg" style="height: 150px">
           <div class="absolute-bottom bg-transparent">
             <q-avatar size="56px" class="q-mb-sm">
-              <img src="statics/patrick_perfil.png">
+              <img src="/patrick_perfil.png">
             </q-avatar>
             <div class="text-weight-bold">Patrick Monteiro</div>
             <div class="q-gutter-sm">

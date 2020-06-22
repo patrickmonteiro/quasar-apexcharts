@@ -4,7 +4,7 @@
       <div class="col-4 self-center text-center" >
          <img
           alt="Quasar logo"
-          src="statics/analysis.svg"
+          src="/analysis.svg"
           style="width: 300px"
         >
       </div>
