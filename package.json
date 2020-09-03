@@ -10,16 +10,16 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.8.2",
+    "@quasar/extras": "^1.9.5",
     "apexcharts": "^3.19.2",
     "axios": "^0.18.1",
     "core-js": "^3.6.5",
-    "quasar": "^1.12.7",
+    "quasar": "^1.13.2",
     "vue-apexcharts": "^1.4.0",
     "vue-i18n": "^8.18.2"
   },
   "devDependencies": {
-    "@quasar/app": "^2.0.0",
+    "@quasar/app": "^2.0.9",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
