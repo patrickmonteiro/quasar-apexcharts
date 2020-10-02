@@ -30,3 +30,18 @@ quasar dev
 ```bash
 quasar build
 ```
+
+## Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+
+1. Create your own fork of the project
+2. Clone the fork you made
+3. Do the changes in your fork
+4. Test your changes
+5. Make sure your changes lints
+6. Issue that pull request!
+
+## License
+
+By contributing, you agree that your contributions will be licensed under its MIT License.
