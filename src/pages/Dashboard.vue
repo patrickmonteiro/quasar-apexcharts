@@ -30,6 +30,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-radar></apex-radar>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-candle-stick></apex-candle-stick>
+      </div>
     </div>
   </q-page>
 </template>
@@ -43,6 +46,7 @@ import ApexMultipleRadialBars from 'components/ApexMultipleRadialBars'
 import ApexRadialBar from 'components/ApexRadialBar'
 import ApexBubble from 'components/ApexBubble'
 import ApexRadar from 'components/ApexRadar'
+import ApexCandleStick from 'components/ApexCandleStick'
 import ApexLineSmall from 'components/ApexLineSmall'
 export default {
   name: 'PageIndex',
@@ -55,6 +59,7 @@ export default {
     ApexRadialBar,
     ApexBubble,
     ApexRadar,
+    ApexCandleStick,
     ApexLineSmall
   },
   data () {
