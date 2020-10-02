@@ -7,7 +7,7 @@
 <script>
 import CardBase from 'components/CardBase'
 export default {
-  name: 'ApexMultipleRadialBars',
+  name: 'ApexPolarMap',
   components: {
     CardBase
   },
