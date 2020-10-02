@@ -30,6 +30,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-radar></apex-radar>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-polar-map></apex-polar-map>
+      </div>
     </div>
   </q-page>
 </template>
@@ -44,6 +47,7 @@ import ApexRadialBar from 'components/ApexRadialBar'
 import ApexBubble from 'components/ApexBubble'
 import ApexRadar from 'components/ApexRadar'
 import ApexLineSmall from 'components/ApexLineSmall'
+import ApexPolarMap from 'components/ApexPolarMap'
 export default {
   name: 'PageIndex',
   components: {
@@ -55,7 +59,8 @@ export default {
     ApexRadialBar,
     ApexBubble,
     ApexRadar,
-    ApexLineSmall
+    ApexLineSmall,
+    ApexPolarMap
   },
   data () {
     return {
