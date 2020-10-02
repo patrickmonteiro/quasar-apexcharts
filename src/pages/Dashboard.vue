@@ -33,6 +33,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-polar-map></apex-polar-map>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-candle-stick></apex-candle-stick>
+      </div>
     </div>
   </q-page>
 </template>
@@ -46,6 +49,7 @@ import ApexMultipleRadialBars from 'components/ApexMultipleRadialBars'
 import ApexRadialBar from 'components/ApexRadialBar'
 import ApexBubble from 'components/ApexBubble'
 import ApexRadar from 'components/ApexRadar'
+import ApexCandleStick from 'components/ApexCandleStick'
 import ApexLineSmall from 'components/ApexLineSmall'
 import ApexPolarMap from 'components/ApexPolarMap'
 export default {
@@ -60,7 +64,9 @@ export default {
     ApexBubble,
     ApexRadar,
     ApexLineSmall,
-    ApexPolarMap
+    ApexPolarMap,
+    ApexCandleStick,
+    ApexLineSmall
   },
   data () {
     return {
