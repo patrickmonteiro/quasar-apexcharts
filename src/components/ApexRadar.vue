@@ -28,9 +28,6 @@ export default {
         },
         yaxis: {
           show: false
-        },
-        markers: {
-          size: 0
         }
       }
     }
