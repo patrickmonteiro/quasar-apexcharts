@@ -65,8 +65,7 @@ export default {
     ApexRadar,
     ApexLineSmall,
     ApexPolarMap,
-    ApexCandleStick,
-    ApexLineSmall
+    ApexCandleStick
   },
   data () {
     return {
