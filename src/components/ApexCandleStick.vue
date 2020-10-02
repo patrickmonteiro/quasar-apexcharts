@@ -276,6 +276,11 @@ export default {
         yaxis: {
           tooltip: {
             enabled: true
+          },
+          labels: {
+            style: {
+              colors: '#fff'
+            }
           }
         }
       }
