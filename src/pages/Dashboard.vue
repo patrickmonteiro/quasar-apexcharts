@@ -45,12 +45,16 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-line-scatter></apex-line-scatter>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-area></apex-area>
+      </div>
     </div>
   </q-page>
 </template>
 
 <script>
 import ApexColumn from 'components/ApexColumn'
+import ApexArea from 'components/ApexArea'
 import ApexDonut from 'components/ApexDonut'
 import ApexLine from 'components/ApexLine'
 import ApexHeatmap from 'components/ApexHeatmap'
@@ -68,6 +72,7 @@ export default {
   name: 'PageIndex',
   components: {
     ApexColumn,
+    ApexArea,
     ApexDonut,
     ApexLine,
     ApexMultipleRadialBars,
