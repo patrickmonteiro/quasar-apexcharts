@@ -37,6 +37,9 @@
         <apex-candle-stick></apex-candle-stick>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-treemap></apex-treemap>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-line-column></apex-line-column>
       </div>
     </div>
@@ -56,6 +59,7 @@ import ApexCandleStick from 'components/ApexCandleStick'
 import ApexLineSmall from 'components/ApexLineSmall'
 import ApexPolarMap from 'components/ApexPolarMap'
 import ApexLineColumn from 'components/ApexLineColumn'
+import ApexTreemap from 'components/ApexTreemap'
 export default {
   name: 'PageIndex',
   components: {
@@ -70,7 +74,8 @@ export default {
     ApexLineSmall,
     ApexPolarMap,
     ApexCandleStick,
-    ApexLineColumn
+    ApexLineColumn,
+    ApexTreemap
   },
   data () {
     return {
