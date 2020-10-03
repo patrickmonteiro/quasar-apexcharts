@@ -42,6 +42,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-line-column></apex-line-column>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-line-scatter></apex-line-scatter>
+      </div>
     </div>
   </q-page>
 </template>
@@ -60,6 +63,7 @@ import ApexLineSmall from 'components/ApexLineSmall'
 import ApexPolarMap from 'components/ApexPolarMap'
 import ApexLineColumn from 'components/ApexLineColumn'
 import ApexTreemap from 'components/ApexTreemap'
+import ApexLineScatter from 'components/ApexLineScatter'
 export default {
   name: 'PageIndex',
   components: {
@@ -75,7 +79,8 @@ export default {
     ApexPolarMap,
     ApexCandleStick,
     ApexLineColumn,
-    ApexTreemap
+    ApexTreemap,
+    ApexLineScatter
   },
   data () {
     return {
