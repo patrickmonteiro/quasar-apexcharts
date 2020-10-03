@@ -15,6 +15,7 @@ export default {
     return {
       series: [14, 23, 21, 17, 15, 10, 12, 17, 21],
       chartOptions: {
+        labels: ['GitHub', 'Facebook', 'Twitter', 'WhatsApp', 'Linkedin', 'Messenger', 'Bitbucket', 'Hubstaff', 'Jira'],
         title: {
           text: 'Polar Area',
           align: 'left',
@@ -31,7 +32,8 @@ export default {
         legend: {
           labels: {
             colors: '#FFF'
-          }
+          },
+          offsetY: -1
         },
         fill: {
           opacity: 0.8

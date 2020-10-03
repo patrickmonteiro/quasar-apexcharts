@@ -35,7 +35,7 @@ export default {
             color: '#FFF'
           }
         },
-        labels: ['Apple', 'Mango', 'Orange', 'Watermelon'],
+        labels: ['Apple', 'Mango', 'Orange', 'Watermelon', 'Strawberry'],
         responsive: [{
           breakpoint: 480,
           options: {

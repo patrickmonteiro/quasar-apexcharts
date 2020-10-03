@@ -58,18 +58,16 @@ export default {
             },
             dataLabels: {
               name: {
-                offsetY: -10,
-                show: true,
-                color: '#FFF',
-                fontSize: '17px'
+                show: false
               },
               value: {
                 formatter: function (val) {
-                  return parseInt(val)
+                  return val + '%'
                 },
                 color: '#FFF',
                 fontSize: '36px',
-                show: true
+                show: true,
+                offsetY: 13
               }
             }
           }
@@ -89,8 +87,7 @@ export default {
         },
         stroke: {
           lineCap: 'round'
-        },
-        labels: ['Percent']
+        }
       }
     }
   }
