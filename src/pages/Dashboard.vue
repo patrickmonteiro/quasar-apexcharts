@@ -36,6 +36,9 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-candle-stick></apex-candle-stick>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-line-scatter></apex-line-scatter>
+      </div>
     </div>
   </q-page>
 </template>
@@ -52,6 +55,7 @@ import ApexRadar from 'components/ApexRadar'
 import ApexCandleStick from 'components/ApexCandleStick'
 import ApexLineSmall from 'components/ApexLineSmall'
 import ApexPolarMap from 'components/ApexPolarMap'
+import ApexLineScatter from 'components/ApexLineScatter'
 export default {
   name: 'PageIndex',
   components: {
@@ -65,7 +69,8 @@ export default {
     ApexRadar,
     ApexLineSmall,
     ApexPolarMap,
-    ApexCandleStick
+    ApexCandleStick,
+    ApexLineScatter
   },
   data () {
     return {
