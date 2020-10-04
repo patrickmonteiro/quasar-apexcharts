@@ -63,7 +63,7 @@ export default {
         yaxis: {
           labels: {
             style: {
-              color: '#fff'
+              colors: '#fff'
             }
           }
         }

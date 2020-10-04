@@ -63,11 +63,14 @@ export default {
         },
         yaxis: {
           title: {
-            text: '$ (thousands)'
+            text: '$ (thousands)',
+            style: {
+              color: '#FFF'
+            }
           },
           labels: {
             style: {
-              color: '#fff'
+              colors: '#fff'
             }
           }
         },

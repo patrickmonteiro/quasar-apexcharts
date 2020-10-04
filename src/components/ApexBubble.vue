@@ -91,7 +91,7 @@ export default {
           max: 70,
           labels: {
             style: {
-              color: '#fff'
+              colors: '#fff'
             }
           }
         }

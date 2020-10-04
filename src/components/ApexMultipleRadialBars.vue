@@ -28,6 +28,11 @@ export default {
             stops: [0, 100]
           }
         },
+        chart: {
+          toolbar: {
+            show: true
+          }
+        },
         title: {
           text: 'Multiple Radial Bars',
           align: 'left',
@@ -64,8 +69,8 @@ export default {
           floating: true,
           fontSize: '16px',
           position: 'left',
-          offsetX: 35,
-          offsetY: 10,
+          offsetX: -20,
+          offsetY: 80,
           labels: {
             useSeriesColors: true
           },
@@ -73,7 +78,7 @@ export default {
             size: 0
           },
           formatter: function (seriesName, opts) {
-            return seriesName + ':  ' + opts.w.globals.series[opts.seriesIndex]
+            return seriesName + ':  ' + opts.w.globals.series[opts.seriesIndex] + '%'
           },
           itemMargin: {
             horizontal: 1

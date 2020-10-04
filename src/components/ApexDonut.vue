@@ -28,6 +28,11 @@ export default {
             stops: [0, 100]
           }
         },
+        chart: {
+          toolbar: {
+            show: true
+          }
+        },
         title: {
           text: 'Donut',
           align: 'left',
@@ -35,7 +40,7 @@ export default {
             color: '#FFF'
           }
         },
-        labels: ['Apple', 'Mango', 'Orange', 'Watermelon'],
+        labels: ['Apple', 'Mango', 'Orange', 'Watermelon', 'Strawberry'],
         responsive: [{
           breakpoint: 480,
           options: {
