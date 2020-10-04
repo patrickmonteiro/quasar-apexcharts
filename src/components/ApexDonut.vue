@@ -28,6 +28,11 @@ export default {
             stops: [0, 100]
           }
         },
+        chart: {
+          toolbar: {
+            show: true
+          }
+        },
         title: {
           text: 'Donut',
           align: 'left',

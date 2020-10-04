@@ -24,7 +24,10 @@ export default {
           }
         },
         chart: {
-          type: 'polarArea'
+          type: 'polarArea',
+          toolbar: {
+            show: true
+          }
         },
         stroke: {
           colors: ['#fff']
