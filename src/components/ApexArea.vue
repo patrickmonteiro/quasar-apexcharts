@@ -12,10 +12,22 @@ export default {
   data () {
     return {
       series: [{
-        name: 'STOCK ABC',
+        name: 'Active users',
         data: [79, 48, 39, 92, 67, 32, 94, 120]
       }],
       chartOptions: {
+        fill: {
+          gradient: {
+            shade: 'dark',
+            type: 'vertical',
+            shadeIntensity: 0.5,
+            gradientToColors: ['#17ead9'],
+            inverseColors: false,
+            opacityFrom: 0.9,
+            opacityTo: 0.7,
+            stops: [0, 100]
+          }
+        },
         dataLabels: {
           enabled: false
         },
