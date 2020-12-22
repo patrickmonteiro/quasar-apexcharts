@@ -10,6 +10,9 @@
         <apex-column></apex-column>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-column-with-scroll></apex-column-with-scroll>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-donut></apex-donut>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
@@ -54,6 +57,7 @@
 
 <script>
 import ApexColumn from 'components/ApexColumn'
+import ApexColumnWithScroll from 'components/ApexColumnWithScroll'
 import ApexArea from 'components/ApexArea'
 import ApexDonut from 'components/ApexDonut'
 import ApexLine from 'components/ApexLine'
@@ -72,6 +76,7 @@ export default {
   name: 'PageIndex',
   components: {
     ApexColumn,
+    ApexColumnWithScroll,
     ApexArea,
     ApexDonut,
     ApexLine,
