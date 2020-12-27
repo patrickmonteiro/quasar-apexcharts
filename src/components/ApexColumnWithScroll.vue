@@ -1,19 +1,19 @@
 <template>
-<q-scroll-area
-      horizontal
-      style="minHeight: 250px; height: 100%; width: 100%;"
-      class="bg-grey-1 rounded-borders"
-    >
-  <card-base >
-    <div style="width: 1200px; min-height: 200px">
-      <apexchart
-        type="bar"
-        height="200"
-        :options="chartOptions"
-        :series="series"
-      />
-    </div>
-  </card-base>
+  <q-scroll-area
+    horizontal
+    style="minHeight: 250px; height: 100%; width: 100%;"
+    class="bg-grey-1 rounded-borders"
+  >
+    <card-base>
+      <div style="width: 1200px; min-height: 200px; linear-gradient( 135deg, #343E59 10%, #2B2D3E 40%)">
+        <apexchart
+          type="bar"
+          height="200"
+          :options="chartOptions"
+          :series="series"
+        />
+      </div>
+    </card-base>
   </q-scroll-area>
 </template>
 
