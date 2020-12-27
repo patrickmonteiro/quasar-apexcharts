@@ -1,11 +1,17 @@
 <template>
   <q-page class="container" style="background: #343E59;">
-    <div class="row q-col-gutter-md q-px-md q-pt-md justify-center">
+    <div
+      class="row q-col-gutter-md q-px-md q-pt-md justify-center"
+      key="lineSmall"
+    >
       <div class="col-md-3" v-for="i in 4" :key="i">
         <apex-line-small :bgColorCard="colors[i - 1]"></apex-line-small>
       </div>
     </div>
-    <div class="row q-col-gutter-md q-px-md q-py-md">
+    <div
+      class="row q-col-gutter-md q-px-md q-py-md"
+      key="allCharts"
+    >
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-column></apex-column>
       </div>
@@ -17,6 +23,9 @@
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-line></apex-line>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <apex-line-gradient></apex-line-gradient>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-multiple-radial-bars></apex-multiple-radial-bars>
@@ -80,57 +89,34 @@
 </template>
 
 <script>
-import ApexColumn from 'components/ApexColumn'
-import ApexArea from 'components/ApexArea'
-import ApexDonut from 'components/ApexDonut'
-import ApexLine from 'components/ApexLine'
-import ApexHeatmap from 'components/ApexHeatmap'
-import ApexMultipleRadialBars from 'components/ApexMultipleRadialBars'
-import ApexRadialBar from 'components/ApexRadialBar'
-import ApexBubble from 'components/ApexBubble'
-import ApexRadar from 'components/ApexRadar'
-import ApexCandleStick from 'components/ApexCandleStick'
-import ApexLineSmall from 'components/ApexLineSmall'
-import ApexPolarMap from 'components/ApexPolarMap'
-import ApexLineColumn from 'components/ApexLineColumn'
-import ApexTreemap from 'components/ApexTreemap'
-import ApexLineScatter from 'components/ApexLineScatter'
-import ApexBarChartsGrouped from 'components/ApexBarChartsGrouped'
-import ApexColumnChartsBasic from 'components/ApexColumnChartsBasic'
-import ApexColumnWithDataLabels from 'components/ApexColumnWithDataLabels'
-import ApexColumnWithScroll from 'components/ApexColumnWithScroll'
-import ApexLineColumnWithScroll from 'components/ApexLineColumnWithScroll'
-import ApexLineWithDataLabels from 'components/ApexLineWithDataLabels'
-import ApexMultipleYaxis from 'components/ApexMultipleYaxis'
-import ApexSimplePieChart from 'components/ApexSimplePieChart'
-import ApexStackedColumns100 from 'components/ApexStackedColumns100'
 export default {
   name: 'PageIndex',
   components: {
-    ApexColumn,
-    ApexArea,
-    ApexDonut,
-    ApexLine,
-    ApexMultipleRadialBars,
-    ApexHeatmap,
-    ApexRadialBar,
-    ApexBubble,
-    ApexRadar,
-    ApexLineSmall,
-    ApexPolarMap,
-    ApexCandleStick,
-    ApexLineColumn,
-    ApexTreemap,
-    ApexLineScatter,
-    ApexBarChartsGrouped,
-    ApexColumnChartsBasic,
-    ApexColumnWithDataLabels,
-    ApexColumnWithScroll,
-    ApexLineColumnWithScroll,
-    ApexLineWithDataLabels,
-    ApexMultipleYaxis,
-    ApexSimplePieChart,
-    ApexStackedColumns100
+    ApexColumn: () => import('components/ApexColumn'),
+    ApexColumnWithScroll: () => import('components/ApexColumnWithScroll'),
+    ApexArea: () => import('components/ApexArea'),
+    ApexDonut: () => import('components/ApexDonut'),
+    ApexLine: () => import('components/ApexLine'),
+    ApexLineGradient: () => import('components/ApexLineGradient'),
+    ApexMultipleRadialBars: () => import('components/ApexMultipleRadialBars'),
+    ApexHeatmap: () => import('components/ApexHeatmap'),
+    ApexRadialBar: () => import('components/ApexRadialBar'),
+    ApexBubble: () => import('components/ApexBubble'),
+    ApexRadar: () => import('components/ApexRadar'),
+    ApexLineSmall: () => import('components/ApexLineSmall'),
+    ApexPolarMap: () => import('components/ApexPolarMap'),
+    ApexCandleStick: () => import('components/ApexCandleStick'),
+    ApexLineColumn: () => import('components/ApexLineColumn'),
+    ApexTreemap: () => import('components/ApexTreemap'),
+    ApexLineScatter: () => import('components/ApexLineScatter'),
+    ApexBarChartsGrouped: () => import('components/ApexBarChartsGrouped'),
+    ApexColumnChartsBasic: () => import('components/ApexColumnChartsBasic'),
+    ApexColumnWithDataLabels: () => import('components/ApexColumnWithDataLabels'),
+    ApexLineColumnWithScroll: () => import('components/ApexLineColumnWithScroll'),
+    ApexLineWithDataLabels: () => import('components/ApexLineWithDataLabels'),
+    ApexMultipleYaxis: () => import('components/ApexMultipleYaxis'),
+    ApexSimplePieChart: () => import('components/ApexSimplePieChart'),
+    ApexStackedColumns100: () => import('components/ApexStackedColumns100')
   },
   data () {
     return {
@@ -141,6 +127,9 @@ export default {
         'linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%)'
       ]
     }
+  },
+  mounted () {
+    console.log('mountou')
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <card-base>
-    <apexchart type="line" height="350" :options="chartOptions" :series="series"></apexchart>
+    <apexchart type="line" height="230" :options="chartOptions" :series="series"></apexchart>
   </card-base>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <card-base>
-    <apexchart type="bar" height="430" :options="chartOptions" :series="series"></apexchart>
+    <apexchart type="bar" height="230" :options="chartOptions" :series="series"></apexchart>
   </card-base>
 </template>
 
@@ -14,13 +14,13 @@ export default {
   data () {
     return {
       series: [{
-        data: [44, 55, 41, 64, 22, 43, 21],
+        data: [44, 55, 41],
         name: 'Green'
       }, {
-        data: [53, 32, 33, 52, 13, 44, 32],
+        data: [53, 32, 33],
         name: 'Yellow'
       }, {
-        data: [60, 15, 25, 47, 21, 35, 39],
+        data: [60, 15, 25],
         name: 'RED'
       }],
       chartOptions: {
@@ -63,7 +63,7 @@ export default {
           colors: ['#fff']
         },
         xaxis: {
-          categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+          categories: [2001, 2002, 2003],
           labels: {
             style: {
               colors: '#fff'

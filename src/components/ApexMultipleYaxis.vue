@@ -1,6 +1,6 @@
 <template>
   <card-base>
-    <apexchart type="line" height="350" :options="chartOptions" :series="series"></apexchart>
+    <apexchart type="line" height="230" :options="chartOptions" :series="series"></apexchart>
   </card-base>
 </template>
 
@@ -68,12 +68,6 @@ export default {
                 colors: '#008FFB'
               }
             },
-            title: {
-              text: 'Income (thousand crores)',
-              style: {
-                color: '#008FFB'
-              }
-            },
             tooltip: {
               enabled: true
             }
@@ -92,12 +86,6 @@ export default {
               style: {
                 colors: '#00E396'
               }
-            },
-            title: {
-              text: 'Operating Cashflow (thousand crores)',
-              style: {
-                color: '#00E396'
-              }
             }
           },
           {
@@ -113,12 +101,6 @@ export default {
             labels: {
               style: {
                 colors: '#FEB019'
-              }
-            },
-            title: {
-              text: 'Revenue (thousand crores)',
-              style: {
-                color: '#FEB019'
               }
             }
           }

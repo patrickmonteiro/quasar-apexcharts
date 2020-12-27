@@ -1,6 +1,6 @@
 <template>
   <card-base >
-      <apexchart type="pie" height="300" :options="chartOptions" :series="series"></apexchart>
+      <apexchart type="pie" height="230" :options="chartOptions" :series="series"></apexchart>
   </card-base>
 </template>
 

@@ -1,9 +1,15 @@
 <template>
-  <q-card class="fit" :style="{backgroundImage: bgColor}"  >
-    <q-card-section>
-      <slot></slot>
-    </q-card-section>
-  </q-card>
+  <transition
+    appear
+    enter-active-class="animated backInLeft"
+    leave-active-class="animated backInLeft"
+  >
+    <q-card class="fit" :style="{backgroundImage: bgColor}"  >
+      <q-card-section>
+        <slot></slot>
+      </q-card-section>
+    </q-card>
+  </transition>
 </template>
 
 <script>

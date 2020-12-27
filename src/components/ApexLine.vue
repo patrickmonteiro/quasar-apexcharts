@@ -46,7 +46,7 @@ export default {
           enabled: false
         },
         title: {
-          text: 'Line',
+          text: 'Line Real Time',
           align: 'left',
           style: {
             color: '#FFF'
