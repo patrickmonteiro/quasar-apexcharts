@@ -45,7 +45,7 @@ export default {
           offsetY: -20,
           style: {
             fontSize: '12px',
-            colors: ['#304758']
+            colors: ['#FFF']
           }
         },
         xaxis: {

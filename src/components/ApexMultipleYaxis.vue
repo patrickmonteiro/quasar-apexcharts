@@ -41,7 +41,6 @@ export default {
         title: {
           text: 'Multiple Y Axis',
           align: 'left',
-          offsetX: 110,
           style: {
             color: '#fff'
           }
