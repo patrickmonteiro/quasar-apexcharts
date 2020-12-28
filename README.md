@@ -12,6 +12,8 @@ Dashboard project using Quasar and ApexCharts
 
 [![N|Solid](https://github.com/patrickmonteiro/quasar-apexcharts/blob/master/docs/QuasarApexDashboard.PNG?raw=true)](http://quasar-apexcharts.surge.sh/)
 
+[![N|Solid](https://github.com/patrickmonteiro/quasar-apexcharts/blob/master/docs/QuasarApexDashboard2.jpg?raw=true)](http://quasar-apexcharts.surge.sh/)
+
 ## Demo
 
 http://quasar-apexcharts.surge.sh/
