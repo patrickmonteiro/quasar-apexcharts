@@ -19,6 +19,11 @@ export default {
       }],
       chartOptions: {
         colors: ['#FCCF31', '#17ead9', '#f02fc2'],
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 1000
+        },
         title: {
           text: 'Column With Data Labels',
           align: 'left',

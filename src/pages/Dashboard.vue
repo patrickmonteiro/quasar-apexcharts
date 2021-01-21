@@ -1,6 +1,10 @@
 <template>
   <q-page class="container" style="background: #343E59;">
+    <card-skeleton
+      v-if="loading"
+    />
     <div
+      v-if="!loading"
       class="row q-col-gutter-md q-px-md q-pt-md justify-center"
       key="lineSmall"
     >
@@ -9,6 +13,7 @@
       </div>
     </div>
     <div
+      v-if="!loading"
       class="row q-col-gutter-md q-px-md q-py-md"
       key="allCharts"
     >
@@ -89,9 +94,11 @@
 </template>
 
 <script>
+import CardSkeleton from 'components/CardSkeleton'
 export default {
   name: 'PageIndex',
   components: {
+    CardSkeleton,
     ApexColumn: () => import('components/ApexColumn'),
     ApexColumnWithScroll: () => import('components/ApexColumnWithScroll'),
     ApexArea: () => import('components/ApexArea'),
@@ -120,6 +127,7 @@ export default {
   },
   data () {
     return {
+      loading: true,
       colors: [
         'linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%)',
         'linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%)',
@@ -129,6 +137,9 @@ export default {
     }
   },
   mounted () {
+    setTimeout(() => {
+      this.loading = false
+    }, 1500)
   }
 }
 </script>

@@ -258,6 +258,11 @@ export default {
         ]
       }],
       chartOptions: {
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 1000
+        },
         title: {
           text: 'Candle Stick',
           align: 'left',

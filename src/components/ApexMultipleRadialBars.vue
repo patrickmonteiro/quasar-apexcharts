@@ -16,6 +16,11 @@ export default {
       series: [76, 67, 61, 90],
       chartOptions: {
         colors: ['#008FFB', '#00E396', '#FEB019', '#D15F5F'],
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 1000
+        },
         fill: {
           type: 'gradient',
           gradient: {

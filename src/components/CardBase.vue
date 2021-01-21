@@ -1,8 +1,9 @@
 <template>
   <transition
     appear
-    enter-active-class="animated backInLeft"
-    leave-active-class="animated backInLeft"
+    :duration="2000"
+    enter-active-class="animated fadeIn"
+    leave-active-class="animated fadeOut"
   >
     <q-card class="fit" :style="{backgroundImage: bgColor}"  >
       <q-card-section>

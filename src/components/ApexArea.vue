@@ -16,6 +16,11 @@ export default {
         data: [79, 48, 39, 92, 67, 32, 94, 120]
       }],
       chartOptions: {
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 1000
+        },
         fill: {
           gradient: {
             shade: 'dark',

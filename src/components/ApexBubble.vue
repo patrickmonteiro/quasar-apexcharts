@@ -42,6 +42,11 @@ export default {
         })
       }],
       chartOptions: {
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 1000
+        },
         fill: {
           type: 'gradient',
           gradient: {

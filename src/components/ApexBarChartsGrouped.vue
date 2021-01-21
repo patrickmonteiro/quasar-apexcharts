@@ -25,6 +25,11 @@ export default {
       }],
       chartOptions: {
         colors: ['#00e396', '#feb019', '#ff4560'],
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 1000
+        },
         title: {
           text: 'Bar Charts Grouped',
           align: 'left',

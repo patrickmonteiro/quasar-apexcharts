@@ -24,6 +24,11 @@ export default {
         data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
       }],
       chartOptions: {
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 1000
+        },
         title: {
           text: 'Column Charts Basic',
           align: 'left',
