@@ -1,7 +1,7 @@
 <template>
   <transition
     appear
-    :duration="2000"
+    :duration="1000"
     enter-active-class="animated fadeIn"
     leave-active-class="animated fadeOut"
   >
