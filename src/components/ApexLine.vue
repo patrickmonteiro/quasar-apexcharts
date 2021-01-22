@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart ref="realtimeChart" type="line" height="200" :options="chartOptions" :series="series" />
-  </card-base>
+  <apexchart ref="realtimeChart" type="line" height="200" :options="chartOptions" :series="series" />
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexLine',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [{
