@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart type=bubble height=230 :options="chartOptions" :series="series" />
-  </card-base>
+  <apexchart type=bubble height=230 :options="chartOptions" :series="series" />
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexBubble',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [{
