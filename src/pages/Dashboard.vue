@@ -1,10 +1,6 @@
 <template>
   <q-page class="container" style="background: #343E59;">
-    <card-skeleton
-      v-if="loading"
-    />
     <div
-      v-if="!loading"
       class="row q-col-gutter-md q-px-md q-pt-md justify-center"
       key="lineSmall"
     >
@@ -13,92 +9,135 @@
       </div>
     </div>
     <div
-      v-if="!loading"
       class="row q-col-gutter-md q-px-md q-py-md"
       key="allCharts"
     >
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-column></apex-column>
+        <card-base>
+          <apex-column></apex-column>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-column-with-scroll></apex-column-with-scroll>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-donut></apex-donut>
+        <card-base>
+          <apex-donut></apex-donut>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-line></apex-line>
+        <card-base>
+          <apex-line></apex-line>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-line-gradient></apex-line-gradient>
+        <card-base>
+          <apex-line-gradient></apex-line-gradient>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-multiple-radial-bars></apex-multiple-radial-bars>
+        <card-base>
+          <apex-multiple-radial-bars></apex-multiple-radial-bars>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-heatmap></apex-heatmap>
+        <card-base>
+          <apex-heatmap></apex-heatmap>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-radial-bar></apex-radial-bar>
+        <card-base>
+          <apex-radial-bar></apex-radial-bar>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-bubble></apex-bubble>
+        <card-base>
+          <apex-bubble></apex-bubble>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-radar></apex-radar>
+        <card-base>
+          <apex-radar></apex-radar>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-polar-map></apex-polar-map>
+        <card-base>
+          <apex-polar-map></apex-polar-map>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-candle-stick></apex-candle-stick>
+        <card-base>
+          <apex-candle-stick></apex-candle-stick>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-treemap></apex-treemap>
+        <card-base>
+          <apex-treemap></apex-treemap>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-line-column></apex-line-column>
+        <card-base>
+          <apex-line-column></apex-line-column>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
         <apex-line-column-with-scroll></apex-line-column-with-scroll>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-line-scatter></apex-line-scatter>
+        <card-base>
+          <apex-line-scatter></apex-line-scatter>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-area></apex-area>
+        <card-base>
+          <apex-area></apex-area>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-bar-charts-grouped></apex-bar-charts-grouped>
+        <card-base>
+          <apex-bar-charts-grouped></apex-bar-charts-grouped>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-column-charts-basic></apex-column-charts-basic>
+        <card-base>
+          <apex-column-charts-basic></apex-column-charts-basic>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-column-with-data-labels></apex-column-with-data-labels>
+        <card-base>
+          <apex-column-with-data-labels></apex-column-with-data-labels>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-line-with-data-labels></apex-line-with-data-labels>
+        <card-base>
+          <apex-line-with-data-labels></apex-line-with-data-labels>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-multiple-yaxis></apex-multiple-yaxis>
+        <card-base>
+          <apex-multiple-yaxis></apex-multiple-yaxis>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-simple-pie-chart></apex-simple-pie-chart>
+        <card-base>
+          <apex-simple-pie-chart></apex-simple-pie-chart>
+        </card-base>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <apex-stacked-columns-100></apex-stacked-columns-100>
+        <card-base>
+          <apex-stacked-columns-100></apex-stacked-columns-100>
+        </card-base>
       </div>
     </div>
   </q-page>
 </template>
 
 <script>
-import CardSkeleton from 'components/CardSkeleton'
+import CardBase from 'components/CardBase'
 export default {
   name: 'PageIndex',
   components: {
-    CardSkeleton,
+    CardBase,
     ApexColumn: () => import('components/ApexColumn'),
     ApexColumnWithScroll: () => import('components/ApexColumnWithScroll'),
     ApexArea: () => import('components/ApexArea'),
@@ -128,6 +167,7 @@ export default {
   data () {
     return {
       loading: true,
+      dialog: true,
       colors: [
         'linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%)',
         'linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%)',
@@ -135,11 +175,6 @@ export default {
         'linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%)'
       ]
     }
-  },
-  mounted () {
-    setTimeout(() => {
-      this.loading = false
-    }, 1500)
   }
 }
 </script>
