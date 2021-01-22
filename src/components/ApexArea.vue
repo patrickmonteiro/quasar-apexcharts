@@ -1,12 +1,8 @@
 <template>
-  <card-base>
-    <apexchart type="area" height="230" :options="chartOptions" :series="series"></apexchart>
-  </card-base>
+  <apexchart type="area" height="230" :options="chartOptions" :series="series"></apexchart>
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
-
 export default {
   name: 'ApexArea',
   data () {
@@ -60,9 +56,6 @@ export default {
         }
       }
     }
-  },
-  components: {
-    CardBase
   }
 }
 </script>
