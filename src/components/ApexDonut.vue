@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart type="donut" height="211" :options="chartOptions" :series="series" />
-  </card-base>
+  <apexchart type="donut" height="211" :options="chartOptions" :series="series" />
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
-  name: 'ApexColumn',
-  components: {
-    CardBase
-  },
+  name: 'ApexDonut',
   data () {
     return {
       series: [44, 55, 41, 17, 15],
