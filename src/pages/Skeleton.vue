@@ -1,9 +1,7 @@
 <template>
-  <!-- <q-page> -->
-  <div style="background: linear-gradient( 135deg, #343E59 10%, #2B2D3E 40%)">
+  <q-page>
     <card-skeleton />
-  </div>
-  <!-- </q-page> -->
+  </q-page>
 </template>
 
 <script>

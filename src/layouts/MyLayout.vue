@@ -89,7 +89,6 @@
 
 <script>
 import { openURL } from 'quasar'
-
 export default {
   name: 'MyLayout',
   data () {

@@ -4,7 +4,7 @@
       <!-- <card-base> -->
         <q-skeleton
             class="full-width"
-            height="90px"
+            height="140px"
             style="background: #343E59;"
           />
       <!-- </card-base> -->
