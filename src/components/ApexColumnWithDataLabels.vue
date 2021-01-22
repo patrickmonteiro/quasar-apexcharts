@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-      <apexchart type="bar" height="230" :options="chartOptions" :series="series"></apexchart>
-  </card-base>
+  <apexchart type="bar" height="230" :options="chartOptions" :series="series"></apexchart>
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexColumnWithDataLabels',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [{
