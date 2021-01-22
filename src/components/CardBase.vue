@@ -1,5 +1,5 @@
 <template>
-  <q-card class="fit" :style="{backgroundImage: bgColor}"  >
+  <q-card class="fit" :style="{backgroundImage: bgColor, minHeight: '150px'}"  >
     <q-card-section>
       <slot></slot>
     </q-card-section>

@@ -175,6 +175,15 @@ export default {
         'linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%)'
       ]
     }
+  },
+  mounted () {
+    this.$q.loading.show({
+      backgroundColor: 'purple-10',
+      delay: 0
+    })
+    setTimeout(() => {
+      this.$q.loading.hide()
+    }, 1300)
   }
 }
 </script>
