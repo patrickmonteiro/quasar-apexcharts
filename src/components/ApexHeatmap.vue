@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart type=heatmap height=200 :options="chartOptions" :series="series" />
-  </card-base>
+  <apexchart type=heatmap height=200 :options="chartOptions" :series="series" />
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexHeatmap',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [
