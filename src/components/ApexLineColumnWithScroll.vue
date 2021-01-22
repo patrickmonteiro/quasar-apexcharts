@@ -2,7 +2,7 @@
 <q-scroll-area
       horizontal
       style="minHeight: 250px; height: 100%; width: 100%;"
-      class="bg-grey-1 rounded-borders"
+      class="bg-grey-1 rounded-borders shadow-2"
     >
   <card-base >
     <div style="width: 1200px; min-height: 200px">
