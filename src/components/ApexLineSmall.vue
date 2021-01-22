@@ -26,13 +26,31 @@ export default {
   data () {
     return {
       series: [{
-        data: [10, 41, 35, 51, 260, 62, 69, 91, 600]
+        data: [10, 41, 850, 51, 260, 62, 420, 91, 600]
       }],
       chartOptions: {
         colors: ['#FFF', '#17ead9', '#f02fc2'],
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 1000
+        },
+        sparkline: {
+          enabled: true
+        },
         chart: {
           toolbar: {
             show: false
+          },
+          sparkline: {
+            enabled: true
+          },
+          dropShadow: {
+            enabled: true,
+            top: 1,
+            left: 1,
+            blur: 2,
+            opacity: 0.2
           }
         },
         grid: {
@@ -50,7 +68,7 @@ export default {
           labels: {
             show: false,
             style: {
-              colors: '#fff'
+              colors: 'bgColorCard'
             }
           }
         },
@@ -63,26 +81,6 @@ export default {
           }
         }
       }
-    }
-  },
-  mounted () {
-    // this.setDataLineChart()
-  },
-  methods: {
-    getRandomArbitrary (min, max) {
-      return Math.floor(Math.random() * 99)
-    },
-    setDataLineChart () {
-      setInterval(() => {
-        this.series[0].data.splice(0, 1)
-        this.series[0].data.push(this.getRandomArbitrary(0, 99))
-        this.updateSeriesLine()
-      }, 3000)
-    },
-    updateSeriesLine () {
-      this.$refs.realtimeChart.updateSeries([{
-        data: this.series[0].data
-      }], false, true)
     }
   }
 }

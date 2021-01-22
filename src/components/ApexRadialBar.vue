@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart type=radialBar height=200 :options="chartOptions" :series="series" />
-  </card-base>
+  <apexchart type="radialBar" height="200" :options="chartOptions" :series="series" />
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexMultipleRadialBars',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [75],

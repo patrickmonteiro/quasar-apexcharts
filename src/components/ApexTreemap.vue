@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart type="treemap" height="230px" :options="chartOptions" :series="series" />
-  </card-base>
+  <apexchart type="treemap" height="230px" :options="chartOptions" :series="series" />
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexTreemap',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [{

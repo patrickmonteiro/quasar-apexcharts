@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart type="polarArea" height=200 :options="chartOptions" :series="series"/>
-  </card-base>
+  <apexchart type="polarArea" height=200 :options="chartOptions" :series="series"/>
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexPolarMap',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [14, 23, 21, 17, 15, 10, 12, 17, 21],

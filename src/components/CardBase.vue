@@ -1,16 +1,9 @@
 <template>
-  <transition
-    appear
-    :duration="1000"
-    enter-active-class="animated fadeIn"
-    leave-active-class="animated fadeOut"
-  >
-    <q-card class="fit" :style="{backgroundImage: bgColor}"  >
-      <q-card-section>
-        <slot></slot>
-      </q-card-section>
-    </q-card>
-  </transition>
+  <q-card class="fit" :style="{backgroundImage: bgColor}"  >
+    <q-card-section>
+      <slot></slot>
+    </q-card-section>
+  </q-card>
 </template>
 
 <script>
@@ -18,7 +11,6 @@ export default {
   name: 'CardBase',
   props: {
     bgColor: {
-      // default: '#2B2D3E'
       default: 'linear-gradient( 135deg, #343E59 10%, #2B2D3E 40%)'
     }
   }

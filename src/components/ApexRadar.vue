@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart type="radar" height="230px" :options="chartOptions" :series="series" />
-  </card-base>
+  <apexchart type="radar" height="230px" :options="chartOptions" :series="series" />
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexRadar',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [{
