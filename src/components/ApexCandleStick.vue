@@ -1,16 +1,10 @@
 <template>
-  <card-base>
-    <apexchart type="candlestick" height="230" :options="chartOptions" :series="series"></apexchart>
-  </card-base>
+  <apexchart type="candlestick" height="230" :options="chartOptions" :series="series"></apexchart>
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
 export default {
   name: 'ApexCandleStick',
-  components: {
-    CardBase
-  },
   data () {
     return {
       series: [{
