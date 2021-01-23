@@ -176,7 +176,7 @@ export default {
       ]
     }
   },
-  mounted () {
+  created () {
     this.$q.loading.show({
       backgroundColor: 'purple-10',
       delay: 0
