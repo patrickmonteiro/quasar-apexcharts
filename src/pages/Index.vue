@@ -2,14 +2,21 @@
   <q-page class="">
     <div class="column justify-center window-height">
       <div class="col-4 self-center text-center" >
-         <img
+         <!-- <img
           alt="Quasar logo"
           src="/analysis.svg"
           style="width: 300px"
-        >
+        > -->
+        <lottie-player
+          src="https://assets7.lottiefiles.com/packages/lf20_q5qeoo3q.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
       <div class="col-4">
-          <p class="text-h3 pink-custom text-weight-bold full-width text-center">
+          <p class="text-h3 text-white text-weight-bold full-width text-center">
             Quasar ApexCharts
           </p>
       </div>
