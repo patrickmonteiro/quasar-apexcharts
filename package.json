@@ -10,11 +10,11 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.10.2",
+    "@quasar/extras": "^1.10.9",
     "apexcharts": "^3.25.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "quasar": "^1.15.10",
+    "quasar": "^1.15.23",
     "vue-apexcharts": "^1.6.0",
     "vue-i18n": "^8.18.2"
   },
