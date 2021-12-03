@@ -52,6 +52,14 @@
             <q-item-label>Dashboard</q-item-label>
           </q-item-section>
         </q-item>
+        <q-item clickable to="/dynamic" exact active-class="text-purple-3">
+          <q-item-section avatar>
+            <q-icon name="fas fa-sync" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Dynamic</q-item-label>
+          </q-item-section>
+        </q-item>
         <q-item clickable tag="a" target="_blank" href="https://github.com/patrickmonteiro/quasar-apexcharts">
           <q-item-section avatar>
             <q-icon name="fab fa-github" />

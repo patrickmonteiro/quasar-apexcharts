@@ -5,7 +5,8 @@ const routes = [
     component: () => import('layouts/MyLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: 'dashboard', component: () => import('pages/Dashboard.vue'), meta: { skeleton: true } }
+      { path: 'dashboard', component: () => import('pages/Dashboard.vue'), meta: { skeleton: true } },
+      { path: 'dynamic', component: () => import('pages/Dynamic.vue'), meta: { skeleton: true } }
     ]
   }
 ]

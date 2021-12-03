@@ -70,20 +70,29 @@ export default {
     }
   },
   mounted () {
-    this.setDataLineChart()
+    // this.setDataLineChart()
+  },
+  destroyed () {
+    // this.setDataLineChart(true)
   },
   methods: {
     getRandomArbitrary (min, max) {
       return Math.floor(Math.random() * 99)
     },
-    setDataLineChart () {
-      setInterval(() => {
+    setDataLineChart (stop) {
+      const interval = setInterval(() => {
         this.series[0].data.splice(0, 1)
         this.series[0].data.push(this.getRandomArbitrary(0, 99))
         this.updateSeriesLine()
       }, 3000)
+
+      if (stop) {
+        clearInterval(interval)
+        console.log('deu stop')
+      }
     },
     updateSeriesLine () {
+      console.log('updateSeriesLine')
       this.$refs.realtimeChart.updateSeries([{
         data: this.series[0].data
       }], false, true)
