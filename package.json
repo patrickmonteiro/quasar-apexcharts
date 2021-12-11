@@ -1,38 +1,34 @@
 {
-  "name": "quasar-apexcharts",
+  "name": "quasar-apexcharts-v2",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar Apex Charts",
+  "productName": "Quasar Apexcharts V2",
   "author": "Patrick Monteiro <eng.patrickmonteiro@gmail.com>",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue src",
+    "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.11.2",
-    "apexcharts": "^3.25.0",
+    "@quasar/extras": "^1.0.0",
+    "apexcharts": "^3.32.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "quasar": "^1.16.0",
-    "vue-apexcharts": "^1.6.0",
-    "vue-i18n": "^8.18.2"
+    "quasar": "^2.0.0",
+    "vue3-apexcharts": "^1.4.1"
   },
   "devDependencies": {
-    "@quasar/app": "^2.2.10",
-    "@vue/eslint-config-standard": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.10.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^5.0.0"
-  },
-  "engines": {
-    "node": ">= 10.18.1",
-    "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app": "^3.0.0",
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "eslint-webpack-plugin": "^2.4.0"
   },
   "browserslist": [
-    "ie >= 11",
     "last 10 Chrome versions",
     "last 10 Firefox versions",
     "last 4 Edge versions",
@@ -42,5 +38,10 @@
     "last 8 FirefoxAndroid versions",
     "last 10 iOS versions",
     "last 5 Opera versions"
-  ]
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
 }

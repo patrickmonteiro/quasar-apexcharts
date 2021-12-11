@@ -2,21 +2,18 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MyLayout.vue'),
+    component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
-      { path: 'dashboard', component: () => import('pages/Dashboard.vue'), meta: { skeleton: true } },
-      { path: 'dynamic', component: () => import('pages/Dynamic.vue'), meta: { skeleton: true } }
+      { path: '', component: () => import('pages/Index.vue') }
     ]
+  },
+
+  // Always leave this as last one,
+  // but you can also remove it
+  {
+    path: '/:catchAll(.*)*',
+    component: () => import('pages/Error404.vue')
   }
 ]
-
-// Always leave this as last one
-if (process.env.MODE !== 'ssr') {
-  routes.push({
-    path: '*',
-    component: () => import('pages/Error404.vue')
-  })
-}
 
 export default routes

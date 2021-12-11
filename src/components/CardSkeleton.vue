@@ -22,15 +22,14 @@
 </template>
 
 <script>
-// import CardBase from 'components/CardBase'
-export default {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'CardSkeleton',
-  components: {
-    // CardBase
-  },
-  data () {
-    return {}
-  },
-  methods: {}
-}
+  props: {
+    bgColor: {
+      default: 'linear-gradient( 135deg, #343E59 10%, #2B2D3E 40%)'
+    }
+  }
+})
 </script>
