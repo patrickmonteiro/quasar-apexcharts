@@ -1,6 +1,6 @@
-# Quasar Apexcharts V2 (quasar-apexcharts-v2)
+# Quasar Apexcharts V2 (quasar-apexcharts)
 
-A Quasar Framework app
+This repository aims to exemplify the integration of the quasar v2 framework (with Vue 3) and the Apexcharts library.
 
 ## Install the dependencies
 ```bash
