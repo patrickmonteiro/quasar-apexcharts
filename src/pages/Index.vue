@@ -10,6 +10,9 @@
       <div class="col-md-6 col-xs-12">
         <apex-line />
       </div>
+      <div class="col-md-6 col-xs-12">
+        <apex-donut />
+      </div>
     </div>
   </q-page>
 </template>
@@ -29,12 +32,17 @@ const ApexLine = defineAsyncComponent(() =>
   import('components/charts/ApexLine.vue')
 )
 
+const ApexDonut = defineAsyncComponent(() =>
+  import('components/charts/ApexDonut.vue')
+)
+
 export default defineComponent({
   name: 'PageIndex',
   components: {
     ApexBar,
     ApexLine,
-    ApexColumn
+    ApexColumn,
+    ApexDonut
   }
 })
 </script>
