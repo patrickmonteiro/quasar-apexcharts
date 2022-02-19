@@ -1,14 +1,10 @@
 <template>
-  <div id="q-app" style="background: #343E59;">
-    <router-view />
-  </div>
+  <router-view />
 </template>
-
 <script>
-export default {
-  name: 'App'
-}
-</script>
+import { defineComponent } from 'vue'
 
-<style>
-</style>
+export default defineComponent({
+  name: 'App'
+})
+</script>

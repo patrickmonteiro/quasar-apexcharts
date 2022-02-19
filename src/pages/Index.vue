@@ -1,37 +1,48 @@
 <template>
-  <q-page class="">
-    <div class="column justify-center window-height">
-      <div class="col-4 self-center text-center" >
-         <!-- <img
-          alt="Quasar logo"
-          src="/analysis.svg"
-          style="width: 300px"
-        > -->
-        <lottie-player
-          src="https://assets7.lottiefiles.com/packages/lf20_q5qeoo3q.json"
-          background="transparent"
-          speed="1"
-          loop
-          autoplay
-        ></lottie-player>
+  <q-page padding>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <apex-column />
       </div>
-      <div class="col-4">
-          <p class="text-h3 text-white text-weight-bold full-width text-center">
-            Quasar ApexCharts
-          </p>
+      <div class="col-md-6 col-xs-12">
+        <apex-bar />
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <apex-line />
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <apex-donut />
       </div>
     </div>
   </q-page>
 </template>
 
 <script>
-export default {
-  name: 'PageIndex'
-}
-</script>
+import { defineComponent, defineAsyncComponent } from 'vue'
 
-<style scoped>
-.pink-custom {
-  color: #D705DC;
-}
-</style>
+const ApexBar = defineAsyncComponent(() =>
+  import('src/components/charts/ApexBar.vue')
+)
+
+const ApexColumn = defineAsyncComponent(() =>
+  import('components/charts/ApexColumn.vue')
+)
+
+const ApexLine = defineAsyncComponent(() =>
+  import('components/charts/ApexLine.vue')
+)
+
+const ApexDonut = defineAsyncComponent(() =>
+  import('components/charts/ApexDonut.vue')
+)
+
+export default defineComponent({
+  name: 'PageIndex',
+  components: {
+    ApexBar,
+    ApexLine,
+    ApexColumn,
+    ApexDonut
+  }
+})
+</script>
