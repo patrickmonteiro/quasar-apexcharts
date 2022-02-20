@@ -1,20 +1,35 @@
 <template>
   <q-page padding>
-    <div class="row">
+    <div class="row q-col-gutter-sm">
       <div class="col-md-6 col-xs-12">
-        <apex-column />
+        <q-card>
+          <apex-column />
+        </q-card>
       </div>
       <div class="col-md-6 col-xs-12">
-        <apex-bar />
+        <q-card>
+          <apex-bar />
+        </q-card>
       </div>
       <div class="col-md-6 col-xs-12">
-        <apex-line />
+        <q-card>
+          <apex-line />
+        </q-card>
       </div>
       <div class="col-md-6 col-xs-12">
-        <apex-donut />
+        <q-card class="fit">
+          <apex-donut />
+        </q-card>
       </div>
       <div class="col-md-6 col-xs-12">
-        <apex-candlestick />
+        <q-card>
+          <apex-candlestick />
+        </q-card>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <q-card>
+          <apex-area />
+        </q-card>
       </div>
     </div>
   </q-page>
@@ -40,7 +55,11 @@ const ApexDonut = defineAsyncComponent(() =>
 )
 
 const ApexCandlestick = defineAsyncComponent(() =>
-  import('components/charts/Candlestick.vue')
+  import('components/charts/ApexCandlestick.vue')
+)
+
+const ApexArea = defineAsyncComponent(() =>
+  import('components/charts/ApexArea.vue')
 )
 
 export default defineComponent({
@@ -50,7 +69,8 @@ export default defineComponent({
     ApexLine,
     ApexColumn,
     ApexDonut,
-    ApexCandlestick
+    ApexCandlestick,
+    ApexArea
   }
 })
 </script>

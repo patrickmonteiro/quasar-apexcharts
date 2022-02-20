@@ -13,7 +13,7 @@ export default defineComponent({
       options: {
         chart: {
           type: 'candlestick',
-          height: 350
+          height: 300
         },
         title: {
           text: 'ApexCandlestick',
