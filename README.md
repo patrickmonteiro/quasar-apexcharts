@@ -2,6 +2,8 @@
 
 This repository aims to exemplify the integration of the quasar v2 framework (with Vue 3) and the Apexcharts library.
 
+Demo Online: https://quasar-apexcharts.netlify.app/#/
+
 ## Install the dependencies
 ```bash
 yarn
