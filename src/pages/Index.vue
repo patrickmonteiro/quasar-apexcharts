@@ -13,6 +13,9 @@
       <div class="col-md-6 col-xs-12">
         <apex-donut />
       </div>
+      <div class="col-md-6 col-xs-12">
+        <apex-candlestick />
+      </div>
     </div>
   </q-page>
 </template>
@@ -36,13 +39,18 @@ const ApexDonut = defineAsyncComponent(() =>
   import('components/charts/ApexDonut.vue')
 )
 
+const ApexCandlestick = defineAsyncComponent(() =>
+  import('components/charts/Candlestick.vue')
+)
+
 export default defineComponent({
   name: 'PageIndex',
   components: {
     ApexBar,
     ApexLine,
     ApexColumn,
-    ApexDonut
+    ApexDonut,
+    ApexCandlestick
   }
 })
 </script>
