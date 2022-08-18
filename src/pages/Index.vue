@@ -31,6 +31,11 @@
           <apex-area />
         </q-card>
       </div>
+      <div class="col-md-6 col-xs-12">
+        <q-card>
+          <apex-bubble />
+        </q-card>
+      </div>
     </div>
   </q-page>
 </template>
@@ -62,6 +67,10 @@ const ApexArea = defineAsyncComponent(() =>
   import('components/charts/ApexArea.vue')
 )
 
+const ApexBubble = defineAsyncComponent(() =>
+  import('components/charts/ApexBubble.vue')
+)
+
 export default defineComponent({
   name: 'PageIndex',
   components: {
@@ -70,7 +79,8 @@ export default defineComponent({
     ApexColumn,
     ApexDonut,
     ApexCandlestick,
-    ApexArea
+    ApexArea,
+    ApexBubble
   }
 })
 </script>
