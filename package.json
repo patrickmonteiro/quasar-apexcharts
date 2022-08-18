@@ -10,18 +10,18 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.13.5",
+    "@quasar/extras": "^1.15.1",
     "apexcharts": "^3.35.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "quasar": "^2.6.6",
+    "quasar": "^2.7.7",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0",
     "vue3-apexcharts": "^1.4.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
-    "@quasar/app-webpack": "^3.5.1",
+    "@quasar/app-webpack": "^3.5.9",
     "eslint": "^7.14.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.19.1",
