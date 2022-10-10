@@ -41,6 +41,11 @@
           <apex-radial-bar style="padding-top: 4rem" />
         </q-card>
       </div>
+      <div class="col-md-6 col-xs-12">
+        <q-card class="fit">
+          <apex-timeline />
+        </q-card>
+      </div>
     </div>
   </q-page>
 </template>
@@ -80,6 +85,10 @@ const ApexRadialBar = defineAsyncComponent(() =>
   import('components/charts/ApexRadialBar.vue')
 )
 
+const ApexTimeline = defineAsyncComponent(() =>
+  import('components/charts/ApexTimeline.vue')
+)
+
 export default defineComponent({
   name: 'PageIndex',
   components: {
@@ -90,7 +99,8 @@ export default defineComponent({
     ApexCandlestick,
     ApexArea,
     ApexBubble,
-    ApexRadialBar
+    ApexRadialBar,
+    ApexTimeline
   }
 })
 </script>
