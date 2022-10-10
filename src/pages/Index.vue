@@ -43,6 +43,11 @@
       </div>
       <div class="col-md-6 col-xs-12">
         <q-card class="fit">
+          <apex-polar-area />
+        </q-card>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <q-card class="fit">
           <apex-timeline />
         </q-card>
       </div>
@@ -85,6 +90,10 @@ const ApexRadialBar = defineAsyncComponent(() =>
   import('components/charts/ApexRadialBar.vue')
 )
 
+const ApexPolarArea = defineAsyncComponent(() =>
+  import('components/charts/ApexPolarArea.vue')
+)
+
 const ApexTimeline = defineAsyncComponent(() =>
   import('components/charts/ApexTimeline.vue')
 )
@@ -100,6 +109,7 @@ export default defineComponent({
     ApexArea,
     ApexBubble,
     ApexRadialBar,
+    ApexPolarArea,
     ApexTimeline
   }
 })
