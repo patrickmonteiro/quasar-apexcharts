@@ -41,6 +41,11 @@
           <apex-radial-bar style="padding-top: 4rem" />
         </q-card>
       </div>
+      <div class="col-md-6 col-xs-12">
+        <q-card class="fit">
+          <apex-polar-area />
+        </q-card>
+      </div>
     </div>
   </q-page>
 </template>
@@ -80,6 +85,10 @@ const ApexRadialBar = defineAsyncComponent(() =>
   import('components/charts/ApexRadialBar.vue')
 )
 
+const ApexPolarArea = defineAsyncComponent(() =>
+  import('components/charts/ApexPolarArea.vue')
+)
+
 export default defineComponent({
   name: 'PageIndex',
   components: {
@@ -90,7 +99,8 @@ export default defineComponent({
     ApexCandlestick,
     ApexArea,
     ApexBubble,
-    ApexRadialBar
+    ApexRadialBar,
+    ApexPolarArea
   }
 })
 </script>
