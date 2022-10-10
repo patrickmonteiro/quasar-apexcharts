@@ -7,7 +7,7 @@ import { defineComponent } from 'vue'
 import { getCssVar } from 'quasar'
 
 export default defineComponent({
-  name: 'Apexline',
+  name: 'ApexDonut',
   data () {
     return {
       options: {
