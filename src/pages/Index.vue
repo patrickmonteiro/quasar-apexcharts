@@ -46,11 +46,12 @@
           <apex-polar-area />
         </q-card>
       </div>
-      <div class="col-md-6 col-xs-12">
+      <!-- Precisa de ajustes, está com problema na renderização -->
+      <!-- <div class="col-md-6 col-xs-12">
         <q-card class="fit">
           <apex-timeline />
         </q-card>
-      </div>
+      </div> -->
     </div>
   </q-page>
 </template>
@@ -94,9 +95,9 @@ const ApexPolarArea = defineAsyncComponent(() =>
   import('components/charts/ApexPolarArea.vue')
 )
 
-const ApexTimeline = defineAsyncComponent(() =>
-  import('components/charts/ApexTimeline.vue')
-)
+// const ApexTimeline = defineAsyncComponent(() =>
+//   import('components/charts/ApexTimeline.vue')
+// )
 
 export default defineComponent({
   name: 'PageIndex',
@@ -109,8 +110,8 @@ export default defineComponent({
     ApexArea,
     ApexBubble,
     ApexRadialBar,
-    ApexPolarArea,
-    ApexTimeline
+    ApexPolarArea
+    // ApexTimeline
   }
 })
 </script>
