@@ -1,6 +1,6 @@
 # Quasar Apexcharts V2 (quasar-apexcharts)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
@@ -44,6 +44,7 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
   <tbody>
     <tr>
       <td align="center"><a href="https://github.com/amimaro"><img src="https://avatars.githubusercontent.com/u/6666978?v=4?s=100" width="100px;" alt="Amir Zahlan"/><br /><sub><b>Amir Zahlan</b></sub></a><br /><a href="https://github.com/patrickmonteiro/quasar-apexcharts/commits?author=amimaro" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/hyperyuri"><img src="https://avatars.githubusercontent.com/u/54409166?v=4?s=100" width="100px;" alt="yuri"/><br /><sub><b>yuri</b></sub></a><br /><a href="https://github.com/patrickmonteiro/quasar-apexcharts/commits?author=hyperyuri" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
