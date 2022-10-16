@@ -52,6 +52,11 @@
           <apex-timeline />
         </q-card>
       </div> -->
+      <div class="col-md-6 col-xs-12">
+        <q-card class="fit">
+          <apex-scatter />
+        </q-card>
+      </div>
     </div>
   </q-page>
 </template>
@@ -99,6 +104,10 @@ const ApexPolarArea = defineAsyncComponent(() =>
 //   import('components/charts/ApexTimeline.vue')
 // )
 
+const ApexScatter = defineAsyncComponent(() =>
+  import('components/charts/ApexScatter.vue')
+)
+
 export default defineComponent({
   name: 'PageIndex',
   components: {
@@ -110,7 +119,8 @@ export default defineComponent({
     ApexArea,
     ApexBubble,
     ApexRadialBar,
-    ApexPolarArea
+    ApexPolarArea,
+    ApexScatter
     // ApexTimeline
   }
 })
