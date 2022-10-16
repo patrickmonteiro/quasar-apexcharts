@@ -25,6 +25,15 @@
         "maintenance",
         "infra"
       ]
+    },
+    {
+      "login": "leandrobhbr",
+      "name": "leandrobhbr",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23706362?v=4",
+      "profile": "https://github.com/leandrobhbr",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
