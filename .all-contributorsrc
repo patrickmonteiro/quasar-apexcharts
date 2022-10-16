@@ -25,6 +25,15 @@
         "maintenance",
         "infra"
       ]
+    },
+    {
+      "login": "rafaeldias97",
+      "name": "Rafael Dias",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33698938?v=4",
+      "profile": "https://github.com/rafaeldias97",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
