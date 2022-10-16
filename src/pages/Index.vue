@@ -46,6 +46,11 @@
           <apex-polar-area />
         </q-card>
       </div>
+       <div class="col-md-6 col-xs-12">
+        <q-card class="fit">
+          <apex-heatmap />
+        </q-card>
+      </div>
       <!-- Precisa de ajustes, está com problema na renderização -->
       <!-- <div class="col-md-6 col-xs-12">
         <q-card class="fit">
@@ -108,6 +113,10 @@ const ApexScatter = defineAsyncComponent(() =>
   import('components/charts/ApexScatter.vue')
 )
 
+const ApexHeatmap = defineAsyncComponent(() =>
+  import('components/charts/ApexHeatmap.vue')
+)
+
 export default defineComponent({
   name: 'PageIndex',
   components: {
@@ -120,7 +129,8 @@ export default defineComponent({
     ApexBubble,
     ApexRadialBar,
     ApexPolarArea,
-    ApexScatter
+    ApexScatter,
+    ApexHeatmap
     // ApexTimeline
   }
 })
