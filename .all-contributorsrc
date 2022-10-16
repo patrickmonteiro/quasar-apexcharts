@@ -25,6 +25,15 @@
         "maintenance",
         "infra"
       ]
+    },
+    {
+      "login": "aaralmeida",
+      "name": "Armando Almeida",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11653551?v=4",
+      "profile": "https://github.com/aaralmeida",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
