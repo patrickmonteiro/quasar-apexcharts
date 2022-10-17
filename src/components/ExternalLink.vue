@@ -14,7 +14,7 @@
 
     <q-item-section>
       <q-item-label>{{ title }}</q-item-label>
-      <q-item-label caption>
+      <q-item-label caption class="text-grey-1">
         {{ caption }}
       </q-item-label>
     </q-item-section>
@@ -25,7 +25,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'EssentialLink',
+  name: 'Navbar',
   props: {
     title: {
       type: String,
