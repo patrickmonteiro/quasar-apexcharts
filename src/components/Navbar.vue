@@ -13,6 +13,12 @@
     />
 
     <RouterLink
+      route="/area-charts"
+      title="Area charts"
+      icon="area_chart"
+    />
+
+    <RouterLink
       route="/bar-charts"
       title="Bar charts"
       icon="table_rows"
@@ -68,7 +74,7 @@
 
     <RouterLink
       route="/scatter-charts"
-      title="Scatter charts"
+      title="Scatter plot charts"
       icon="scatter_plot"
     />
 

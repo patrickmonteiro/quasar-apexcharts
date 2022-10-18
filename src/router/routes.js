@@ -10,6 +10,11 @@ const routes = [
         component: () => import('pages/Index.vue')
       },
       {
+        path: '/area-charts',
+        name: 'areaCharts',
+        component: () => import('pages/chartTypes/AreaCharts.vue')
+      },
+      {
         path: '/bar-charts',
         name: 'barCharts',
         component: () => import('pages/chartTypes/BarCharts.vue')
