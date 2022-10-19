@@ -43,7 +43,7 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/biancassilva"><img src="https://avatars.githubusercontent.com/u/7262942?v=4?s=100" width="100px;" alt="Bianca"/><br /><sub><b>Bianca</b></sub></a><br /><a href="https://github.com/patrickmonteiro/quasar-apexcharts/commits?author=biancassilva" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/biancassilva"><img src="https://avatars.githubusercontent.com/u/7262942?v=4?s=100" width="100px;" alt="Bianca"/><br /><sub><b>Bianca</b></sub></a><br /><a href="https://github.com/patrickmonteiro/quasar-apexcharts/commits?author=biancassilva" title="Code">💻</a> <a href="#design-biancassilva" title="Design">🎨</a></td>
     </tr>
   </tbody>
 </table>
