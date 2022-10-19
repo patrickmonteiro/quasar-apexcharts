@@ -34,6 +34,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Fayhen",
+      "name": "Diego Souza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45882000?v=4",
+      "profile": "https://fayhen.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
