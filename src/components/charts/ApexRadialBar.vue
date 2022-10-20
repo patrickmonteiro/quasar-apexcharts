@@ -19,6 +19,11 @@ export default defineComponent({
             enabled: true
           }
         },
+        title: {
+          text: 'ApexScatter',
+          align: 'left',
+          offsetY: 20
+        },
         colors: [getCssVar('primary'), getCssVar('secondary'), getCssVar('negative')],
         plotOptions: {
           radialBar: {

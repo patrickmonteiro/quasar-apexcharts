@@ -1,0 +1,32 @@
+export default {
+  sidebar: {
+    charts_all: 'Todos',
+    charts_area: 'Área',
+    charts_bar: 'Barras',
+    charts_bubble: 'Bolhas',
+    charts_candlestick: 'Velas',
+    charts_column: 'Colunas',
+    charts_donut: 'Rosca',
+    charts_heatmap: 'Mapas de calor',
+    charts_line: 'Linha',
+    charts_polarArea: 'Área polar',
+    charts_radialBar: 'Barras radiais',
+    charts_scatterPlot: 'Dispersão',
+    link_discord: 'Canal do Discord',
+    link_docs: 'Documentação',
+    link_facebook: 'Facebook',
+    link_forum: 'Fórum',
+    link_github: 'GitHub',
+    link_quasarAwesome: 'Quasar Awesome',
+    link_twitter: 'Twitter',
+    linkCaption_discord: 'https://chat.quasar.dev',
+    linkCaption_docs: 'quasar.dev',
+    linkCaption_facebook: '{\'@\'}QuasarFramework',
+    linkCaption_forum: 'https://forum.quasar.dev',
+    linkCaption_github: 'github.com/quasarframework',
+    linkCaption_quasarAwesome: 'Projetos da comunidade do Quasar',
+    linkCaption_twitter: '{\'@\'}quasarframework',
+    section_charts: 'Gráficos',
+    section_moreAboutQuasar: 'Saiba mais sobre o Quasar'
+  }
+}

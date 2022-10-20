@@ -1,21 +1,25 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+      <q-toolbar class="no-wrap">
+        <div class="col row">
+          <q-btn
+            flat dense round
+            icon="menu"
+            aria-label="Menu"
+            @click="toggleLeftDrawer"
+          />
 
-        <q-toolbar-title>
-          Quasar ApexCharts
-        </q-toolbar-title>
+          <q-toolbar-title>
+            Quasar ApexCharts
+          </q-toolbar-title>
+        </div>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div class="col row justify-center">
+          <LangSwitch class="" />
+        </div>
+
+        <div class="col row justify-end">Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -36,15 +40,17 @@
 </template>
 
 <script>
-import DrawerNavbar from 'components/Navbar.vue'
-
 import { defineComponent, ref } from 'vue'
+
+import DrawerNavbar from 'src/components/Navbar.vue'
+import LangSwitch from 'src/components/LangSwitch.vue'
 
 export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    DrawerNavbar
+    DrawerNavbar,
+    LangSwitch
   },
 
   setup () {
