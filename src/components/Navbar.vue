@@ -1,16 +1,16 @@
 <template>
   <q-list>
+    <RouterLink
+      route="/"
+      icon="home"
+      :title="$t('sidebar.home')"
+    />
+
     <q-item-label
       header
     >
       {{ $t('sidebar.section_charts') }}
     </q-item-label>
-
-    <RouterLink
-      route="/"
-      icon="select_all"
-      :title="$t('sidebar.charts_all')"
-    />
 
     <RouterLink
       route="/area-charts"
@@ -85,6 +85,24 @@
       icon="timeline"
     /> -->
 
+    <RouterLink
+      route="/all-charts"
+      icon="shape_line"
+      :title="$t('sidebar.charts_all')"
+    />
+
+    <q-item-label
+      header
+    >
+      {{ $t('sidebar.section_moreAboutApexCharts') }}
+    </q-item-label>
+
+    <ExternalLink
+      v-for="link in apexChartsLinks"
+      :key="link.title"
+      v-bind="link"
+    />
+
     <q-item-label
       header
     >
@@ -96,11 +114,23 @@
       :key="link.title"
       v-bind="link"
     />
+
+    <q-item-label
+      header
+    >
+      {{ $t('sidebar.section_moreAboutVue') }}
+    </q-item-label>
+
+    <ExternalLink
+      v-for="link in vueLinks"
+      :key="link.title"
+      v-bind="link"
+    />
   </q-list>
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
+import { defineComponent } from 'vue'
 
 import ExternalLink from 'src/components/ExternalLink.vue'
 import RouterLink from 'src/components/RouterLink.vue'
@@ -114,40 +144,61 @@ export default defineComponent({
   },
 
   setup () {
-    const quasarLinks = ref([
+    const apexChartsLinks = [
       {
-        title: 'sidebar.link_docs',
-        caption: 'sidebar.linkCaption_docs',
+        title: 'sidebar.link_apexChartSite',
+        caption: 'sidebar.linkCaption_apexChartSite',
+        icon: 'home_filled',
+        link: 'https://apexcharts.com'
+      },
+      {
+        title: 'sidebar.link_apexChartDocs',
+        caption: 'sidebar.linkCaption_apexChartDocs',
+        icon: 'school',
+        link: 'https://apexcharts.com/docs/installation/'
+      },
+      {
+        title: 'sidebar.link_apexChartGithub',
+        caption: 'sidebar.linkCaption_apexChartGithub',
+        icon: 'code',
+        link: 'https://github.com/apexcharts'
+      }
+    ]
+
+    const quasarLinks = [
+      {
+        title: 'sidebar.link_quasarDocs',
+        caption: 'sidebar.linkCaption_quasarDocs',
         icon: 'school',
         link: 'https://quasar.dev'
       },
       {
-        title: 'sidebar.link_github',
-        caption: 'sidebar.linkCaption_github',
+        title: 'sidebar.link_quasarGithub',
+        caption: 'sidebar.linkCaption_quasarGithub',
         icon: 'code',
         link: 'https://github.com/quasarframework'
       },
       {
-        title: 'sidebar.link_discord',
-        caption: 'sidebar.linkCaption_discord',
-        icon: 'chat',
+        title: 'sidebar.link_quasarDiscord',
+        caption: 'sidebar.linkCaption_quasarDiscord',
+        icon: 'question_answer',
         link: 'https://chat.quasar.dev'
       },
       {
-        title: 'sidebar.link_forum',
-        caption: 'sidebar.linkCaption_forum',
+        title: 'sidebar.link_quasarForum',
+        caption: 'sidebar.linkCaption_quasarForum',
         icon: 'record_voice_over',
         link: 'https://forum.quasar.dev'
       },
       {
-        title: 'sidebar.link_twitter',
-        caption: 'sidebar.linkCaption_twitter',
+        title: 'sidebar.link_quasarTwitter',
+        caption: 'sidebar.linkCaption_quasarTwitter',
         icon: 'rss_feed',
         link: 'https://twitter.quasar.dev'
       },
       {
-        title: 'sidebar.link_facebook',
-        caption: 'sidebar.linkCaption_facebook',
+        title: 'sidebar.link_quasarFacebook',
+        caption: 'sidebar.linkCaption_quasarFacebook',
         icon: 'public',
         link: 'https://facebook.quasar.dev'
       },
@@ -157,10 +208,45 @@ export default defineComponent({
         icon: 'favorite',
         link: 'https://awesome.quasar.dev'
       }
-    ])
+    ]
+
+    const vueLinks = [
+      {
+        title: 'sidebar.link_vueSite',
+        caption: 'sidebar.linkCaption_vueSite',
+        icon: 'home_filled',
+        link: 'https://vuejs.org/'
+      },
+      {
+        title: 'sidebar.link_vueDocs',
+        caption: 'sidebar.linkCaption_vueDocs',
+        icon: 'school',
+        link: 'https://vuejs.org/guide/introduction.html'
+      },
+      {
+        title: 'sidebar.link_vueGithub',
+        caption: 'sidebar.linkCaption_vueGithub',
+        icon: 'code',
+        link: 'https://github.com/vuejs/'
+      },
+      {
+        title: 'sidebar.link_vueDiscord',
+        caption: 'sidebar.linkCaption_vueDiscord',
+        icon: 'question_answer',
+        link: 'https://discord.com/invite/HBherRA'
+      },
+      {
+        title: 'sidebar.link_vueTwitter',
+        caption: 'sidebar.linkCaption_vueTwitter',
+        icon: 'rss_feed',
+        link: 'https://twitter.com/vuejs'
+      }
+    ]
 
     return {
-      quasarLinks
+      apexChartsLinks,
+      quasarLinks,
+      vueLinks
     }
   }
 })
