@@ -6,8 +6,13 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'allCharts',
+        name: 'home',
         component: () => import('pages/Index.vue')
+      },
+      {
+        path: '/all-charts',
+        name: 'allCharts',
+        component: () => import('pages/chartTypes/AllCharts.vue')
       },
       {
         path: '/area-charts',

@@ -21,3 +21,31 @@
 {
 	background-color: #0b2349;
 }
+
+.responsive-container-width {
+  width: 90%;
+}
+
+@media only screen and (min-width: 600px) {
+  .responsive-container-width {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .responsive-container-width {
+    width: 65%
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .responsive-container-width {
+    width: 50%
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .responsive-container-width {
+    width: 1100px
+  }
+}
