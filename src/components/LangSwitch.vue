@@ -1,22 +1,24 @@
 <template>
-  <q-btn
-    unelevated rounded
+  <q-btn-dropdown
+    unelevated rounded no-wrap split
     color="secondary"
     style="min-width: 125px;"
-    :label="locale"
+    :toggle-aria-label="$t('ui.ariaLabel_langSwitch')"
   >
-    <q-menu style="min-width: 200px;">
-      <q-list>
-        <q-item
-          clickable v-close-popup
-          v-for="option in localeOptions" :key="option.value"
-          @click="setLocale(option.value)"
-        >
-          <q-item-section>{{ option.label }}</q-item-section>
-        </q-item>
-      </q-list>
-    </q-menu>
-  </q-btn>
+    <template v-slot:label>
+      <span class="q-ml-sm">{{ locale }}</span>
+    </template>
+
+    <q-list style="min-width: 200px;">
+      <q-item
+        clickable v-close-popup
+        v-for="option in localeOptions" :key="option.value"
+        @click="setLocale(option.value)"
+      >
+        <q-item-section>{{ option.label }}</q-item-section>
+      </q-item>
+    </q-list>
+  </q-btn-dropdown>
 </template>
 
 <script>

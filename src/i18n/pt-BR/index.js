@@ -56,5 +56,8 @@ export default {
     aboutQuasar: 'O Quasar Framework V2 é um poderoso framework frontend de última geração com foco em performance, construído sobre o Vue 3. Ele possui uma extensa biblioteca de componentes de UI, já prontos com suporte a navegadores mobile e desktop. Além disso, também possui pronto suporte a diferentes modos de build, incluindo SPA, SSR, PWA, aplicações mobile e desktop e até extensões de navegadores.',
     checkOutMenus: 'Saiba mais sobre essas bibliotecas no menu à esquerda, e também navegue entre diferentes categorias de gráficos!',
     checkOutExamples: 'Confira também alguns exemplos em destaque abaixo:'
+  },
+  ui: {
+    ariaLabel_langSwitch: 'Abrir menu de seleção de idioma'
   }
 }
