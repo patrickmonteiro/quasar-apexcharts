@@ -14,7 +14,7 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexTimeline = defineAsyncComponent(() =>
-  import('components/charts/ApexTimeline.vue')
+  import('src/components/charts/timeline/ApexTimeline.vue')
 )
 
 export default defineComponent({

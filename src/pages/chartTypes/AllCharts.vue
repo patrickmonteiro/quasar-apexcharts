@@ -1,5 +1,7 @@
 <template>
   <q-page padding>
+    <p class="q-mb-lg text-body2">{{ $t('presentation.showingOneOfEach') }}</p>
+
     <div class="row q-col-gutter-sm">
       <div class="col-md-6 col-xs-12">
         <q-card>
@@ -43,6 +45,11 @@
       </div>
       <div class="col-md-6 col-xs-12">
         <q-card class="fit">
+          <apex-pie style="padding-top: 4rem" />
+        </q-card>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <q-card class="fit">
           <apex-polar-area />
         </q-card>
       </div>
@@ -69,40 +76,44 @@
 <script>
 import { defineComponent, defineAsyncComponent } from 'vue'
 const ApexBar = defineAsyncComponent(() =>
-  import('src/components/charts/ApexBar.vue')
+  import('src/components/charts/bar/ApexBar.vue')
 )
 const ApexColumn = defineAsyncComponent(() =>
-  import('components/charts/ApexColumn.vue')
+  import('src/components/charts/column/ApexColumn.vue')
 )
 const ApexLine = defineAsyncComponent(() =>
-  import('components/charts/ApexLine.vue')
+  import('src/components/charts/line/ApexLine.vue')
 )
 const ApexDonut = defineAsyncComponent(() =>
-  import('components/charts/ApexDonut.vue')
+  import('src/components/charts/donut/ApexDonut.vue')
 )
 const ApexCandlestick = defineAsyncComponent(() =>
-  import('components/charts/ApexCandlestick.vue')
+  import('src/components/charts/candlestick/ApexCandlestick.vue')
 )
 const ApexArea = defineAsyncComponent(() =>
-  import('components/charts/ApexArea.vue')
+  import('src/components/charts/area/ApexArea.vue')
 )
 const ApexBubble = defineAsyncComponent(() =>
-  import('components/charts/ApexBubble.vue')
+  import('src/components/charts/bubble/ApexBubble.vue')
 )
 const ApexRadialBar = defineAsyncComponent(() =>
-  import('components/charts/ApexRadialBar.vue')
+  import('src/components/charts/radialBar/ApexRadialBar.vue')
+)
+
+const ApexPie = defineAsyncComponent(() =>
+  import('src/components/charts/pie/PopulationByContinent.vue')
 )
 const ApexPolarArea = defineAsyncComponent(() =>
-  import('components/charts/ApexPolarArea.vue')
+  import('src/components/charts/polarArea/ApexPolarArea.vue')
 )
 // const ApexTimeline = defineAsyncComponent(() =>
 //   import('components/charts/ApexTimeline.vue')
 // )
 const ApexScatter = defineAsyncComponent(() =>
-  import('components/charts/ApexScatter.vue')
+  import('src/components/charts/scatterPlot/ApexScatter.vue')
 )
 const ApexHeatmap = defineAsyncComponent(() =>
-  import('components/charts/ApexHeatmap.vue')
+  import('src/components/charts/heatmap/ApexHeatmap.vue')
 )
 export default defineComponent({
   name: 'AllCharts',
@@ -115,6 +126,7 @@ export default defineComponent({
     ApexArea,
     ApexBubble,
     ApexRadialBar,
+    ApexPie,
     ApexPolarArea,
     ApexScatter,
     ApexHeatmap

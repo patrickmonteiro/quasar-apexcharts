@@ -14,7 +14,7 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexArea = defineAsyncComponent(() =>
-  import('components/charts/ApexArea.vue')
+  import('src/components/charts/area/ApexArea.vue')
 )
 
 export default defineComponent({

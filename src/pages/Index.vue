@@ -59,19 +59,19 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexCandlestick = defineAsyncComponent(() =>
-  import('components/charts/ApexCandlestick.vue')
+  import('src/components/charts/candlestick/ApexCandlestick.vue')
 )
 
 const ApexArea = defineAsyncComponent(() =>
-  import('components/charts/ApexArea.vue')
+  import('src/components/charts/area/ApexArea.vue')
 )
 
 const ApexBubble = defineAsyncComponent(() =>
-  import('components/charts/ApexBubble.vue')
+  import('src/components/charts/bubble/ApexBubble.vue')
 )
 
 const ApexHeatmap = defineAsyncComponent(() =>
-  import('components/charts/ApexHeatmap.vue')
+  import('src/components/charts/heatmap/ApexHeatmap.vue')
 )
 
 export default defineComponent({

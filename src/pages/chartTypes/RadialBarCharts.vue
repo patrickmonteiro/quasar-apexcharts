@@ -14,7 +14,7 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexRadialBar = defineAsyncComponent(() =>
-  import('components/charts/ApexRadialBar.vue')
+  import('src/components/charts/radialBar/ApexRadialBar.vue')
 )
 
 export default defineComponent({

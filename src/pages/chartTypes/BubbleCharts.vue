@@ -14,7 +14,7 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexBubble = defineAsyncComponent(() =>
-  import('components/charts/ApexBubble.vue')
+  import('src/components/charts/bubble/ApexBubble.vue')
 )
 
 export default defineComponent({

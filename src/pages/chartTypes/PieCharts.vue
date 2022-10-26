@@ -3,7 +3,7 @@
     <div class="row q-col-gutter-sm">
       <div class="col-md-6 col-xs-12">
         <q-card>
-          <apex-scatter />
+          <population-by-continent />
         </q-card>
       </div>
     </div>
@@ -13,14 +13,14 @@
 <script>
 import { defineComponent, defineAsyncComponent } from 'vue'
 
-const ApexScatter = defineAsyncComponent(() =>
-  import('src/components/charts/scatterPlot/ApexScatter.vue')
+const PopulationByContinent = defineAsyncComponent(() =>
+  import('src/components/charts/pie/PopulationByContinent.vue')
 )
 
 export default defineComponent({
-  name: 'ScatterCharts',
+  name: 'PieCharts',
   components: {
-    ApexScatter
+    PopulationByContinent
   }
 })
 </script>

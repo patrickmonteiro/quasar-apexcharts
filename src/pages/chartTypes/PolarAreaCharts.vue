@@ -14,7 +14,7 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexPolarArea = defineAsyncComponent(() =>
-  import('components/charts/ApexPolarArea.vue')
+  import('src/components/charts/polarArea/ApexPolarArea.vue')
 )
 
 export default defineComponent({

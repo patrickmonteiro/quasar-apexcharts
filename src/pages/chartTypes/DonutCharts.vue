@@ -14,7 +14,7 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexDonut = defineAsyncComponent(() =>
-  import('components/charts/ApexDonut.vue')
+  import('src/components/charts/donut/ApexDonut.vue')
 )
 
 export default defineComponent({

@@ -14,7 +14,7 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexCandlestick = defineAsyncComponent(() =>
-  import('components/charts/ApexCandlestick.vue')
+  import('src/components/charts/candlestick/ApexCandlestick.vue')
 )
 
 export default defineComponent({
