@@ -6,6 +6,12 @@
           <apex-line />
         </q-card>
       </div>
+
+      <div class="col-md-6 col-xs-12">
+        <q-card>
+          <gdp-china-usa />
+        </q-card>
+      </div>
     </div>
   </q-page>
 </template>
@@ -13,14 +19,17 @@
 <script>
 import { defineComponent, defineAsyncComponent } from 'vue'
 
+import GdpChinaUsa from 'src/components/charts/line/GdpChinaUsa.vue'
+
 const ApexLine = defineAsyncComponent(() =>
-  import('components/charts/ApexLine.vue')
+  import('src/components/charts/line/ApexLine.vue')
 )
 
 export default defineComponent({
   name: 'LineCharts',
   components: {
-    ApexLine
+    ApexLine,
+    GdpChinaUsa
   }
 })
 </script>

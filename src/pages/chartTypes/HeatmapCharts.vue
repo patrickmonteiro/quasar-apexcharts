@@ -14,7 +14,7 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexHeatmap = defineAsyncComponent(() =>
-  import('components/charts/ApexHeatmap.vue')
+  import('src/components/charts/heatmap/ApexHeatmap.vue')
 )
 
 export default defineComponent({

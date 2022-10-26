@@ -9,6 +9,7 @@ export default {
     charts_donut: 'Rosca',
     charts_heatmap: 'Mapas de calor',
     charts_line: 'Linha',
+    charts_pie: 'Pizza',
     charts_polarArea: 'Área polar',
     charts_radialBar: 'Barras radiais',
     charts_scatterPlot: 'Dispersão',
@@ -55,7 +56,8 @@ export default {
     aboutApexCharts: 'O ApexCharts é uma moderna biblioteca JavaScript de código aberto que permite aos desenvolvedores criar bonitas visualizações de dados de maneira rápida para páginas da Web. Ela inclui vários tipos de gráficos diferentes com componentes facilmente customizáveis.',
     aboutQuasar: 'O Quasar Framework V2 é um poderoso framework frontend de última geração com foco em performance, construído sobre o Vue 3. Ele possui uma extensa biblioteca de componentes de UI, já prontos com suporte a navegadores mobile e desktop. Além disso, também possui pronto suporte a diferentes modos de build, incluindo SPA, SSR, PWA, aplicações mobile e desktop e até extensões de navegadores.',
     checkOutMenus: 'Saiba mais sobre essas bibliotecas no menu à esquerda, e também navegue entre diferentes categorias de gráficos!',
-    checkOutExamples: 'Confira também alguns exemplos em destaque abaixo:'
+    checkOutExamples: 'Confira também alguns exemplos em destaque abaixo:',
+    showingOneOfEach: 'Esta página mostra um exemplo de gráfico para cada uma das categorias disponíveis neste repositório. Confira as categorias no menu de navegação para mais exemplos!'
   },
   ui: {
     ariaLabel_langSwitch: 'Abrir menu de seleção de idioma'

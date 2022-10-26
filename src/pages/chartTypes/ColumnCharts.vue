@@ -6,6 +6,12 @@
           <apex-column />
         </q-card>
       </div>
+
+      <div class="col-md-6 col-xs-12">
+        <q-card>
+          <biggest-companies />
+        </q-card>
+      </div>
     </div>
   </q-page>
 </template>
@@ -14,13 +20,18 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexColumn = defineAsyncComponent(() =>
-  import('components/charts/ApexColumn.vue')
+  import('src/components/charts/column/ApexColumn.vue')
+)
+
+const BiggestCompanies = defineAsyncComponent(() =>
+  import('src/components/charts/column/BiggestCompanies.vue')
 )
 
 export default defineComponent({
   name: 'ColumnCharts',
   components: {
-    ApexColumn
+    ApexColumn,
+    BiggestCompanies
   }
 })
 </script>

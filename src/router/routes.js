@@ -55,6 +55,11 @@ const routes = [
         component: () => import('pages/chartTypes/LineCharts.vue')
       },
       {
+        path: '/pie-charts',
+        name: 'pieCharts',
+        component: () => import('pages/chartTypes/PieCharts.vue')
+      },
+      {
         path: '/polar-area-charts',
         name: 'polarAreaCharts',
         component: () => import('pages/chartTypes/PolarAreaCharts.vue')

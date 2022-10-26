@@ -61,6 +61,12 @@
     />
 
     <RouterLink
+      route="/pie-charts"
+      icon="incomplete_circle"
+      :title="$t('sidebar.charts_pie')"
+    />
+
+    <RouterLink
       route="/polar-area-charts"
       icon="track_changes"
       :title="$t('sidebar.charts_polarArea')"

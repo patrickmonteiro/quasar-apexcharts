@@ -6,6 +6,12 @@
           <apex-bar />
         </q-card>
       </div>
+
+      <div class="col-md-6 col-xs-12">
+        <q-card>
+          <biggest-libraries />
+        </q-card>
+      </div>
     </div>
   </q-page>
 </template>
@@ -14,13 +20,18 @@
 import { defineComponent, defineAsyncComponent } from 'vue'
 
 const ApexBar = defineAsyncComponent(() =>
-  import('components/charts/ApexBar.vue')
+  import('src/components/charts/bar/ApexBar.vue')
+)
+
+const BiggestLibraries = defineAsyncComponent(() =>
+  import('src/components/charts/bar/BiggestLibraries.vue')
 )
 
 export default defineComponent({
   name: 'BarCharts',
   components: {
-    ApexBar
+    ApexBar,
+    BiggestLibraries
   }
 })
 </script>
