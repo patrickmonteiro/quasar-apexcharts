@@ -1241,10 +1241,10 @@
     core-js "^3.6.5"
     core-js-compat "^3.6.5"
 
-"@quasar/extras@^1.15.6":
-  version "1.15.6"
-  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.15.6.tgz#0bbcd0df9d403355cf7c82a4f3d287f4e1e98b7c"
-  integrity sha512-lG3wrcz47c86N/j1ULZugmyVfwpmnsJpjtSWh+LhaFfe0g1kTMdAnxkWGKsa3ouZ4QBcnkrNan0kYSnKc3MiBg==
+"@quasar/extras@^1.15.8":
+  version "1.15.8"
+  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.15.8.tgz#948e35a7bc6006d97eb16273d1f05c99997fe126"
+  integrity sha512-UR6Snu7DSYdDOGqcNjUr0FJtKNfPn2Jc2hKTC+y/Y7Gf+vWu0RYUl49cguD33nn+wpbgs28+cvmjx7u3NNogoQ==
 
 "@quasar/fastclick@1.1.5":
   version "1.1.5"
@@ -5146,10 +5146,10 @@ qs@6.10.3:
   dependencies:
     side-channel "^1.0.4"
 
-quasar@^2.10.2:
-  version "2.10.2"
-  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.10.2.tgz#0a35d654a645d33fbe7dc537ea3be52917fa543d"
-  integrity sha512-y6suu0f2hJKrnFPHzx+p2EBVGzDF6xHaqYGkDIsMNkhxsrO9Qi2+dZCjq1J6+48EJiqPEOn8t9X/gT7yLSSnLw==
+quasar@^2.11.2:
+  version "2.11.2"
+  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.11.2.tgz#d0b70f90c45ee3e17dbca547fae1d96e17d32549"
+  integrity sha512-4u1REwVqJ7KPB7Mo/fxR6P4c5CQ1F7zjW/w4Cnb5OKnWhZDDSRcIWK+kTUZoFZ7/lGlac/0iFQXyrIc0noHhiw==
 
 queue-microtask@^1.2.2:
   version "1.2.3"
