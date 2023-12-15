@@ -1,5 +1,5 @@
 <template>
-  <q-list>
+  <q-list id="qa-navbar">
     <RouterLink
       route="/"
       icon="home"

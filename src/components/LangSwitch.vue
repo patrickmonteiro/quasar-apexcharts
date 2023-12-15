@@ -1,5 +1,6 @@
 <template>
   <q-btn-dropdown
+    id="qa-lang"
     unelevated rounded no-wrap split
     color="secondary"
     style="min-width: 125px;"

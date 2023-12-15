@@ -40,10 +40,10 @@
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
-
+import { defineComponent, ref, onMounted } from 'vue'
 import DrawerNavbar from 'src/components/Navbar.vue'
 import LangSwitch from 'src/components/LangSwitch.vue'
+import useDriver from 'src/composables/UseDriveJs'
 
 export default defineComponent({
   name: 'MainLayout',
@@ -55,6 +55,12 @@ export default defineComponent({
 
   setup () {
     const leftDrawerOpen = ref(false)
+
+    const { initDriver } = useDriver()
+
+    onMounted(() => {
+      initDriver()
+    })
 
     return {
       leftDrawerOpen,
